@@ -1,0 +1,78 @@
+#service-support{
+  width: 100%;
+  h2{
+    font-size: 29px;
+  }
+  h3{
+    font-size: 19px;
+  }
+  .topBackground{
+    width: 100%;
+    height: 400px;
+    background: url(.././img/about_us_company_profile_top_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .serviceSupportBodyWrap{
+    width: 100%;
+    .serviceSupportBody{
+      box-sizing: border-box;
+      padding: 35px 0;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      ul{
+        .serverTitle{
+          box-sizing: border-box;
+          padding: 20px 0 18px 0;
+          h2{
+            color: #ccc;
+          }
+        }
+        li{
+          padding: 10px 0;
+          a{ 
+            color: #666;
+            &:link{
+              color: #666;
+            }
+            &:hover{
+              color: #ccc;
+            }
+          }
+          .router-link-active{
+            color: #fff;
+          }
+        }
+        .serverHr{
+          height: 2px;
+          background: #0057A8;
+          width: 145px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px){
+    .serviceSupportBodyWrap{
+      box-sizing: border-box;
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 992px){
+    .topBackground{
+      height: 300px!important;
+    }
+  }
+  @media (max-width: 768px){
+    // #service-support{
+      h2{
+        font-size: 16px;
+      }
+      h3{
+        font-size: 14px;
+      }
+    // }
+    .topBackground{
+      height: 140px!important;
+    }
+  }
+}

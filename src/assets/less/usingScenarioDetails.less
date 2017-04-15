@@ -1,0 +1,85 @@
+#usingScenarioDetails{
+  width: 100%;
+  margin: 0 auto;
+  .usingScenarioDetailsImg{
+    li{
+      height: 800px;
+      width: 100%;
+      &:nth-of-type(1){
+        background: url(../img/clothing_store_2.png) no-repeat center center;
+        background-size: auto 100%;
+      }
+      &:nth-of-type(2){
+        background: url(../img/shoe_store_2.png) no-repeat center center;
+        background-size: auto 100%;
+      }
+      &:nth-of-type(3){
+        background: url(../img/luggage_shop_2.png) no-repeat center center;
+        background-size: auto 100%;
+      }
+      &:nth-of-type(4){
+        background: url(../img/lingerie_store_2.png) no-repeat center center;
+        background-size: auto 100%;
+      }
+    }
+  }
+  .floorNav{
+    position: fixed;
+    right: 0;
+    top: 35%;
+    li{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:nth-of-type(1){
+        background: url(../img/clothing_store_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/clothing_store_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(2){
+        background: url(../img/shoe_store_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/shoe_store_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(3){
+        background: url(../img/luggage_shop_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/luggage_shop_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(4){
+        background: url(../img/lingerie_store_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/lingerie_store_selected.png) no-repeat center center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+  #usingScenarioDetails{
+    .usingScenarioDetailsImg{
+      li{
+        height: 450px;
+      }
+    }
+    .floorNav{
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px){
+  #usingScenarioDetails{
+    .usingScenarioDetailsImg{
+      li{
+        height: 230px;
+      }
+    }
+  }
+}

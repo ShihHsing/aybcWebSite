@@ -1,0 +1,85 @@
+#hardware{
+  width: 100%;
+  .topBackground{
+    width: 100%;
+    height: 800px;
+    background: url(../img/hardware_banner.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .trumpetWrap{
+    background: url(../img/hardware_horn.png) #2E3037 no-repeat center center;
+  }
+  .intelligentIdentification{
+    background: url(../img/hardware_intelligent_identification.png) #282A30 no-repeat center center;
+  }
+  .panel{
+    background: url(../img/hardware_panel.png) #2E3037 no-repeat center center;
+  }
+  .detector{
+    background: url(../img/hardware_detector.png) #282A30 no-repeat center center;
+  }
+  .trumpetWrap,.intelligentIdentification,.panel,.detector{
+    width: 100%;
+    background-size: auto 100%;
+    height: 100%;
+  }
+  .el-row{
+    height: 800px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    .el-col{
+      height: 100%;
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: flex;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      align-items: center;
+      .text{
+        h3{
+          font-size: 38px;
+          padding: 40px 0;
+          color: #ccc;
+        }
+        p{
+          font-size: 14px;
+          color: #999;
+          line-height: 20px;
+          height: 180px;
+          display: -webkit-box; //必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+          -webkit-box-orient //必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+          text-overflow: ellipsis;//可以用来多行文本的情况下，用省略号“…”隐藏超出范围的文本 。
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 9;
+          -webkit-box-orient: vertical;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+  #hardware{
+    .topBackground,.el-row{
+      height: 450px;
+    }
+  }
+}
+@media (max-width: 768px){
+  #hardware{
+    .topBackground{
+      height: 230px;
+    }
+    .el-row{
+      height: 300px;
+    }
+  }
+}

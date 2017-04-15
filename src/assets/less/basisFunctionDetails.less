@@ -1,0 +1,200 @@
+#basisFunctionDetails{
+  width: 100%;
+  .wrap{
+    width: 100%;
+    height: 800px;
+    .text_wrap{
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 15px;
+      .center{
+        height: 100%;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+      img{
+        width: 100%;
+        max-width: 710px;
+      }
+      h3{
+        font-size: 40px;
+        color: #333;
+        padding: 20px 0;
+      }
+      p{
+        font-size: 16px;
+        color: #333;
+        line-height: 30px;
+        height: 180px;
+        display: -webkit-box; //必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
+        -webkit-box-orient //必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
+        text-overflow: ellipsis;//可以用来多行文本的情况下，用省略号“…”隐藏超出范围的文本 。
+        overflow : hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  .voice_interaction{
+    background: url(../img/voice_interaction_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .ecg_heart_rate{
+    background: url(../img/ecg_heart_rate_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .d_fitting{
+    background: url(../img/3d_fitting_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .hit_golden_eggs{
+    background: url(../img/hit_golden_eggs_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .lucky_big_wheel{
+    background: url(../img/lucky_big_wheel_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .preferential{
+    background: url(../img/preferential_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .product{
+    background: url(../img/product_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .promotion{
+    background: url(../img/promotion_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .music{
+    background: url(../img/music_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .advertising{
+    background: url(../img/advertising_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .care_project{
+    background: url(../img/care_project_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .live{
+    background: url(../img/live_bg.png) no-repeat center center;
+    background-size: auto 100%;
+  }
+  .floorNav{
+    position: fixed;
+    right: 0;
+    top: 20%;
+    li{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:nth-of-type(1){
+        background: url(../img/voice_interaction_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/voice_interaction_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(2){
+        background: url(../img/ecg_heart_rate_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/ecg_heart_rate_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(3){
+        background: url(../img/3d_fitting_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/3d_fitting_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(4){
+        background: url(../img/hit_golden_eggs_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/hit_golden_eggs_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(5){
+        background: url(../img/lucky_big_wheel_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/lucky_big_wheel_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(6){
+        background: url(../img/preferential_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/preferential_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(7){
+        background: url(../img/product_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/product_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(8){
+        background: url(../img/promotion_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/promotion_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(9){
+        background: url(../img/music_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/music_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(10){
+        background: url(../img/advertising_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/advertising_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(11){
+        background: url(../img/care_project_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/care_project_selected.png) no-repeat center center;
+        }
+      }
+      &:nth-of-type(12){
+        background: url(../img/live_default.png) no-repeat center center;
+        &:hover{
+          background: url(../img/live_selected.png) no-repeat center center;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+  #basisFunctionDetails{
+    .wrap{
+      height: 450px;
+    }
+    .floorNav{
+      display: none;
+    }
+  }
+}
+@media (max-width: 768px){
+  #basisFunctionDetails{
+    .wrap{
+      height: 350px;
+    }
+  }
+}

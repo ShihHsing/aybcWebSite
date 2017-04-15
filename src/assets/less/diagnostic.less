@@ -1,0 +1,61 @@
+#diagnostic{
+  width: 100%;
+  .diagnostic_one{
+    height: 700px;
+    background: url(../img/accessories_1.png) #2E3037 no-repeat center center;
+    background-size: auto 100%;
+  }
+  .diagnostic_two{
+    height: 700px;
+    background: url(../img/accessories_2.png) #282A30 no-repeat center center;
+    background-size: auto 100%;
+    .diagnostic_two_text{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      .textWrap{
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        align-items: center;
+        .text{
+          font-size: 38px;
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+  #diagnostic{
+    .diagnostic_one,.diagnostic_two{
+      height: 400px;
+      .diagnostic_two_text{
+        .textWrap{
+          .text{
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  #diagnostic{
+    .diagnostic_one,.diagnostic_two{
+      height: 200px;
+    }
+  }
+}
