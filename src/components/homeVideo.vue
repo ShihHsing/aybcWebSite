@@ -5,12 +5,12 @@
         <el-row :gutter="10">
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <div class="oneVideo">
-              <img src=".././assets/img/home_ad_background.png" alt="哎哟不错机器人产品宣传视频">
+              <img src=".././assets/img/home_ad_background-min.jpg" alt="哎哟不错机器人产品宣传视频">
             </div>
           </el-col>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <div class="twoVideo">
-              <img src=".././assets/img/home_instructions_background.png" alt="哎哟不错机器人产品安装视频">
+              <img src=".././assets/img/home_instructions_background-min.jpg" alt="哎哟不错机器人产品安装视频">
             </div>
           </el-col>
         </el-row>
@@ -23,9 +23,7 @@
   export default{
     name: 'homeVideo',
     data () {
-      return {
-
-      }
+      return {}
     }
   }
 </script>

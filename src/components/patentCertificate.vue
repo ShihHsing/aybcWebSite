@@ -6,12 +6,12 @@
         <el-row>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
         </el-row>
@@ -21,12 +21,12 @@
         <el-row>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
         </el-row>
@@ -38,12 +38,12 @@
         <el-row>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
         </el-row>
@@ -53,12 +53,12 @@
         <el-row>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
           <el-col :xs="24" :sm="24" :md="12" :lg="12">
             <el-row type="flex" justify="center">
-              <img src="../assets/img/patentCertificate.png" alt="">
+              <img src="../assets/img/patentCertificate-min.jpg" alt="">
             </el-row>
           </el-col>
         </el-row>
@@ -68,25 +68,11 @@
 </template>
 
 <script>
-  import '../assets/less/patentCertificate.less';
+  import '../assets/less/patentCertificate.less'
   export default{
     name: 'patentCertificate',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>
-
-<style lang="less">
-@media (max-width: 1200px){
-
-}
-@media (max-width: 992px){
-  
-}
-@media (max-width: 768px){
-  
-}
-</style>

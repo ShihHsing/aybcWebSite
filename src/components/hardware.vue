@@ -48,13 +48,11 @@
 </template>
 
 <script>
-  import '../assets/less/hardware.less';
+  import '../assets/less/hardware.less'
   export default{
     name: 'hardware',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>

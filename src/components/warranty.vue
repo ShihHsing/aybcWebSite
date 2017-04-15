@@ -18,13 +18,11 @@
 </template>
 
 <script>
-  import '../assets/less/warranty.less';
+  import '../assets/less/warranty.less'
   export default{
     name: 'warranty',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>

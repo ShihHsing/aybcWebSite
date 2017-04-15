@@ -2,7 +2,7 @@
   <div id="parameter">
     <h3>产品详情</h3>
     <div class="parameter">
-      <img src="../assets/img/parameter.png" alt="产品参数详情图">
+      <img src="../assets/img/parameter-min.png" alt="产品参数详情图">
     </div>
     <el-row>
       <h3>哎哟不错机器人参数</h3>
@@ -147,25 +147,11 @@
 </template>
 
 <script>
-  import '../assets/less/parameter.less';
+  import '../assets/less/parameter.less'
   export default{
     name: 'parameter',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>
-
-<style lang="less">
-@media (max-width: 1200px){
-
-}
-@media (max-width: 992px){
-  
-}
-@media (max-width: 768px){
-  
-}
-</style>

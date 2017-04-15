@@ -6,23 +6,21 @@
         <el-col :xs="24" :sm="24" :md="5" :lg="5">
           <el-row>
             <ul>
-              <li class="serverTitle"><router-link :to="{ path: '/aboutUs/companyProfile' }"><h2>关于我们</h2></router-link></li>
+              <li class="serverTitle">
+                <router-link :to="{ path: '/aboutUs/companyProfile' }">
+                  <h2>关于我们</h2>
+                </router-link>
+              </li>
               <div class="serverHr"></div>
-              <el-col :xs="5" :sm="5" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/aboutUs/companyProfile', activeClass: 'active'}"><h3>公司简介</h3></router-link></li>
-              </el-col>
-              <el-col :xs="5" :sm="5" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/aboutUs/newsTrends', activeClass: 'active'}"><h3>新闻动态</h3></router-link></li>
-              </el-col>
-              <el-col :xs="5" :sm="5" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/aboutUs/joinUs', activeClass: 'active'}"><h3>加入我们</h3></router-link></li>
-              </el-col>
-              <el-col :xs="5" :sm="5" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/aboutUs/contactUs', activeClass: 'active'}"><h3>联系我们</h3></router-link></li>
-              </el-col>
-              <el-col :xs="4" :sm="4" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/aboutUs/patentCertificate', activeClass: 'active'}"><h3>专利证书</h3></router-link></li>
-              </el-col>
+              <template v-for="item in path">
+                <el-col :xs="4" :sm="4" :md="24" :lg="24">
+                  <li>
+                    <router-link :to="{ 'path': item.path, activeClass: 'active'}">
+                      <h3>{{ item.title }}</h3>
+                    </router-link>
+                  </li>
+                </el-col>
+              </template>
             </ul>
           </el-row>  
         </el-col>
@@ -37,12 +35,13 @@
 </template>
 
 <script>
-  import '../assets/less/aboutUs.less';
+  import '../assets/less/aboutUs.less'
+  import * as PATH from '../router/aboutUs_serviceSupport_link.js'
   export default{
     name: 'aboutUs',
     data () {
       return {
-        
+        path: PATH.aboutUs
       }
     }
   }

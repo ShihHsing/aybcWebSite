@@ -6,17 +6,21 @@
         <el-col :xs="24" :sm="24" :md="4" :lg="4">
           <el-row>
             <ul>
-              <li class="serverTitle"><router-link :to="{ path: '/serviceSupport/purchaseNotes' }"><h2>服务与支持</h2></router-link></li>
+              <li class="serverTitle">
+                <router-link :to="{ path: '/serviceSupport/purchaseNotes' }">
+                  <h2>服务与支持</h2>
+                </router-link>
+              </li>
               <div class="serverHr"></div>
-              <el-col :xs="8" :sm="8" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/serviceSupport/purchaseNotes', activeClass: 'active'}"><h3>购买须知</h3></router-link></li>
-              </el-col>
-              <el-col :xs="8" :sm="8" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/serviceSupport/warranty', activeClass: 'active'}"><h3>保修承诺</h3></router-link></li>
-              </el-col>
-              <el-col :xs="8" :sm="8" :md="24" :lg="24">
-                <li><router-link :to="{ path: '/serviceSupport/commonProblems', activeClass: 'active'}"><h3>常见问题与解决方案</h3></router-link></li>
-              </el-col>
+              <template v-for="item in path">
+                <el-col :xs="8" :sm="8" :md="24" :lg="24">
+                  <li>
+                    <router-link :to="{ 'path': item.path, activeClass: 'active'}">
+                      <h3>{{ item.title }}</h3>
+                    </router-link>
+                  </li>
+                </el-col>
+              </template>
             </ul>
           </el-row>  
         </el-col>
@@ -31,17 +35,14 @@
 </template>
 
 <script>
-  import '../assets/less/ServiceSupport.less';
+  import '../assets/less/ServiceSupport.less'
+  import * as PATH from '../router/aboutUs_serviceSupport_link.js'
   export default{
     name: 'service-support',
     data () {
       return {
-        
+        path: PATH.serviceSupport
       }
     }
   }
 </script>
-
-<style lang="less">
-
-</style>

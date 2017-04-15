@@ -48,13 +48,12 @@
 </template>
 
 <script>
-import '.././assets/less/links.less';
+  import '.././assets/less/links.less'
   export default{
     name: 'links',
     data () {
-      return {
-        
-      }
-    },
+      return {}
+    }
   }
 </script>
+

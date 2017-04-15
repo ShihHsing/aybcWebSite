@@ -3,7 +3,7 @@
     <div class="voice_interaction wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/voice_interaction_picture.png" alt="语音互动_详情">
+          <img src="../assets/img/voice_interaction_picture-min.png" alt="语音互动_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -22,14 +22,14 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/ecg_heart_rate_picture.png" alt="心电心率_详情">
+          <img src="../assets/img/ecg_heart_rate_picture-min.png" alt="心电心率_详情">
         </el-col>
       </el-row>
     </div>
     <div class="d_fitting wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/3d_fitting_picture.png" alt="3D试衣_详情">
+          <img src="../assets/img/3d_fitting_picture-min.png" alt="3D试衣_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -48,14 +48,14 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/hit_golden_eggs_picture.png" alt="砸金蛋_详情">
+          <img src="../assets/img/hit_golden_eggs_picture-min.png" alt="砸金蛋_详情">
         </el-col>
       </el-row>
     </div>
     <div class="lucky_big_wheel wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/lucky_big_wheel_picture.png" alt="3D试衣_详情">
+          <img src="../assets/img/lucky_big_wheel_picture-min.png" alt="3D试衣_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -74,14 +74,14 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/preferential_picture.png" alt="砸金蛋_详情">
+          <img src="../assets/img/preferential_picture-min.png" alt="砸金蛋_详情">
         </el-col>
       </el-row>
     </div>
     <div class="product wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/product_picture.png" alt="3D试衣_详情">
+          <img src="../assets/img/product_picture-min.png" alt="3D试衣_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -100,14 +100,14 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/promotion_picture.png" alt="砸金蛋_详情">
+          <img src="../assets/img/promotion_picture-min.png" alt="砸金蛋_详情">
         </el-col>
       </el-row>
     </div>
     <div class="music wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/music_picture.png" alt="3D试衣_详情">
+          <img src="../assets/img/music_picture-min.png" alt="3D试衣_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -126,14 +126,14 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/advertising_picture.png" alt="砸金蛋_详情">
+          <img src="../assets/img/advertising_picture-min.png" alt="砸金蛋_详情">
         </el-col>
       </el-row>
     </div>
     <div class="care_project wrap">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/care_project_picture.png" alt="3D试衣_详情">
+          <img src="../assets/img/care_project_picture-min.png" alt="3D试衣_详情">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -152,7 +152,7 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/live_picture.png" alt="砸金蛋_详情">
+          <img src="../assets/img/live_picture-min.png" alt="砸金蛋_详情">
         </el-col>
       </el-row>
     </div>
@@ -178,113 +178,99 @@
 </template>
 
 <script>
-  import '../assets/less/basisFunctionDetails.less';
+  import '../assets/less/basisFunctionDetails.less'
   export default{
     name: 'basisFunctionDetails',
     data () {
       return {
         scrolled: '',
-        width: '',
-        clothing_store_default: false
+        width: ''
       }
     },
     methods: {
       handleScroll () {
-        this.scrolled = window.scrollY;
-        this.width = window.screen.width;
+        this.scrolled = window.scrollY
+        this.width = window.screen.width
       },
-      
       smoothness (num) {
         var scrolled = this.scrolled
+        var time = null
         if (this.scrolled > num) {
-          // statement
-          var time = setInterval( () => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled-=80
+          time = setInterval(() => {
+            document.documentElement.scrollTop = document.body.scrollTop = scrolled -= 80
             if (scrolled <= num) {
-              // statement
-              window.clearInterval(time);
+              window.clearInterval(time)
               document.documentElement.scrollTop = document.body.scrollTop = num
             }
-          },1)
+          }, 1)
         } else {
-          var time = setInterval( () => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled+=80
+          time = setInterval(() => {
+            document.documentElement.scrollTop = document.body.scrollTop = scrolled += 80
             if (scrolled >= num) {
-              // statement
-              window.clearInterval(time);
+              window.clearInterval(time)
               document.documentElement.scrollTop = document.body.scrollTop = num
             }
-          },1)
+          }, 1)
         }
       },
 
       anchor (num) {
-        console.log(this.$route.query.id);
+        console.log(this.$route.query.id)
         switch (this.$route.query.id) {
           case 'voice_interaction':
-            // statements_1
-            this.smoothness(800/num);
-            break;
+            this.smoothness(800 / num)
+            break
           case 'ecg_heart_rate':
-            this.smoothness(1600/num);
-            break;
+            this.smoothness(1600 / num)
+            break
           case 'd_fitting':
-            this.smoothness(2400/num);
-            break;
+            this.smoothness(2400 / num)
+            break
           case 'hit_golden_eggs':
-            this.smoothness(3200/num);
-            break;
+            this.smoothness(3200 / num)
+            break
           case 'lucky_big_wheel':
-            this.smoothness(4000/num);
-            break;
+            this.smoothness(4000 / num)
+            break
           case 'preferential':
-            this.smoothness(4800/num);
-            break;
+            this.smoothness(4800 / num)
+            break
           case 'product':
-            this.smoothness(5600/num);
-            break;
+            this.smoothness(5600 / num)
+            break
           case 'promotion':
-            this.smoothness(6400/num);
-            break;
+            this.smoothness(6400 / num)
+            break
           case 'music':
-            this.smoothness(7200/num);
-            break;
+            this.smoothness(7200 / num)
+            break
           case 'advertising':
-            this.smoothness(8000/num);
-            break;
+            this.smoothness(8000 / num)
+            break
           case 'care_project':
-            this.smoothness(8800/num);
-            break;
+            this.smoothness(8800 / num)
+            break
           case 'live':
-            this.smoothness(9600/num);
-            break;
+            this.smoothness(9600 / num)
+            break
           default:
-            // statements_def
-            this.smoothness(0);
-            break;
+            this.smoothness(0)
+            break
         }
       }
     },
     created () {
-      window.addEventListener('scroll', this.handleScroll);
-      setTimeout( () => {
+      window.addEventListener('scroll', this.handleScroll)
+      setTimeout(() => {
         console.log('开始')
         if (this.width < 769) {
-          // statement
-          console.log(2)
-          this.anchor(2.4);
+          this.anchor(2.4)
         } else if (this.width < 993) {
-          // statement
-          console.log(3)
           this.anchor(1.8)
-        } else{
+        } else {
           this.anchor(1)
         }
-      },800);
+      }, 800)
     }
   }
 </script>
-
-<style lang="less">
-
-</style>

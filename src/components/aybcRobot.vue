@@ -10,13 +10,11 @@
 </template>
 
 <script>
-  import '../assets/less/aybcRobot.less';
+  import '../assets/less/aybcRobot.less'
   export default{
     name: 'aybcRobot',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>

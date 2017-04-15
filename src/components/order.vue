@@ -20,7 +20,7 @@
 </template>
 
 <script>
-  import '../assets/less/order.less';
+  import '../assets/less/order.less'
   export default{
     name: 'order',
     data () {
@@ -40,7 +40,7 @@
     },
     methods: {
       addOrderUser () {
-        var phoneReg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+        var phoneReg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
         if (this.name) {
           // statement
           if (this.sex) {
@@ -49,51 +49,39 @@
               // statement
               if (phoneReg.test(this.phoneNumber)) {
                 // statement
-                this.$http.post(this.url,{
-                  name: this.name,
-                  phone_number: this.phoneNumber,
+                this.$http.post(this.url, {
+                  'name': this.name,
+                  'phone_number': this.phoneNumber,
                   sex: this.sex
-                },{
+                }, {
                   emulateJSON: true
                 })
-                .then( (msg) => {
-                  console.log(msg);
-                  if (msg.data.flag == '1000') {
+                .then((msg) => {
+                  console.log(msg)
+                  if (msg.data.flag === '1000') {
                     // statement
-                    alert('稍后会有专人跟您联系!请注意接听电话!');
-                    window.location.reload();
+                    window.alert('稍后会有专人跟您联系!请注意接听电话!')
+                    window.location.reload()
                   } else {
-                    alert(msg.data.return_code)
+                    window.alert(msg.data.return_code)
                   }
                 }, (response) => {
-                  alert(response.data.return_code)
+                  window.alert(response.data.return_code)
                 })
               } else {
-                alert('输入手机号有误!请重新输出!')
+                window.alert('输入手机号有误!请重新输出!')
               }
             } else {
-              alert('手机号码不能为空')
+              window.alert('手机号码不能为空')
             }
           } else {
-            alert('请选择性别!')
+            window.alert('请选择性别!')
           }
         } else {
-          alert('请完善您的姓名!')
+          window.alert('请完善您的姓名!')
         }
         // this.$http.post()
       }
     }
   }
 </script>
-
-<style lang="less">
-@media (max-width: 1200px){
-
-}
-@media (max-width: 992px){
-  
-}
-@media (max-width: 768px){
-  
-}
-</style>

@@ -12,13 +12,11 @@
 </template>
 
 <script>
-  import '../assets/less/companyProfile.less';
+  import '../assets/less/companyProfile.less'
   export default{
     name: 'companyProfile',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>
