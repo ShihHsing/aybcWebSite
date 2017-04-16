@@ -5,7 +5,7 @@
     </div>
     <!-- 路由出口 -->
     <transition name="fade" mode="out-in">
-      <router-view></router-view>
+      <router-view class="body"></router-view>
     </transition>
     <router-view name="a"></router-view>
     <!-- link -->

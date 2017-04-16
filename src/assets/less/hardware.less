@@ -47,7 +47,7 @@
         p{
           font-size: 14px;
           color: #999;
-          line-height: 20px;
+          line-height: 25px;
           height: 180px;
           display: -webkit-box; //必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。
           -webkit-box-orient //必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。
@@ -55,7 +55,7 @@
           overflow : hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 9;
+          -webkit-line-clamp: 7;
           -webkit-box-orient: vertical;
         }
       }
@@ -80,6 +80,10 @@
     }
     .el-row{
       height: 300px;
+      .hardware_title{
+        font-size: 16px !important;
+        padding: 20px 0 !important; 
+      }
     }
   }
 }

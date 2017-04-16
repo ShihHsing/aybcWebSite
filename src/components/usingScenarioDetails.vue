@@ -8,10 +8,10 @@
     </ul>
     <transition name="fade" mode="out-in">
       <ul class="floorNav" v-show="scrolled > 400">
-        <li v-on:click="smoothness(850)"></li>
-        <li v-on:click="smoothness(1600)"></li>
-        <li v-on:click="smoothness(2400)"></li>
-        <li v-on:click="smoothness(3200)"></li>
+        <li v-on:click="smoothness(650)"></li>
+        <li v-on:click="smoothness(1400)"></li>
+        <li v-on:click="smoothness(2200)"></li>
+        <li v-on:click="smoothness(3000)"></li>
       </ul>
     </transition>
   </div>
@@ -57,16 +57,16 @@
         console.log(this.$route.query.id)
         switch (this.$route.query.id) {
           case 'clothing_store':
-            this.smoothness(850 / num)
+            this.smoothness(650 / num)
             break
           case 'shoe_store':
-            this.smoothness(1600 / num)
+            this.smoothness(1400 / num)
             break
           case 'luggage_shop':
-            this.smoothness(2400 / num)
+            this.smoothness(2200 / num)
             break
           case 'lingerie_store':
-            this.smoothness(3200 / num)
+            this.smoothness(3000 / num)
             break
           default:
             this.smoothness(0)

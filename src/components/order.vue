@@ -1,6 +1,6 @@
 <template>
   <div id="order">
-    <h3>跨界共赢未来,招商共筑蓝图</h3>
+    <h3 class="order_title">跨界共赢未来,招商共筑蓝图</h3>
     <el-row class="from_order">
       <el-col :sapn="24">
         <el-input v-model="name" placeholder="姓名" class="input"></el-input>

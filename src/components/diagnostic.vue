@@ -7,7 +7,7 @@
       <el-col :span="24" class="diagnostic_two">
         <el-row class="diagnostic_two_text">
           <el-col :span="8" :offset="16" class="textWrap">
-            <h3 class="text">以物寓意的心形结构</br>盈盈一握的精致手感</br>走进自己的内心健康</br>懂得关心,才会理解</h3>
+            <h3 class="text">以物寓意的心形结构</br>盈盈一握的精致手感</br>走进自己的内心健康</br>懂得关心，才会理解</h3>
           </el-col>
         </el-row>
       </el-col>

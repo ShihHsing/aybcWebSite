@@ -14,10 +14,10 @@
               <div class="serverHr"></div>
               <el-row>
                 <template v-for="item in path">
-                  <el-col :xs="4" :sm="4" :md="24" :lg="24">
+                  <el-col :xs="5" :sm="5" :md="24" :lg="24">
                     <li>
                       <router-link :to="{ 'path': item.path, activeClass: 'active'}">
-                        <h3>{{ item.title }}   </h3>
+                        <h3>{{ item.title }}</h3>
                       </router-link>
                     </li>
                   </el-col>

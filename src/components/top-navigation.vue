@@ -46,7 +46,7 @@
               </el-dropdown-item> -->
               <el-dropdown-item>
                 <router-link to="/aybcRobot/order">
-                  <h3>预约招商</h3>
+                  <h3>招商政策</h3>
                 </router-link>
               </el-dropdown-item>
             </el-dropdown-menu>
@@ -57,7 +57,7 @@
         <el-row type="flex" justify="center">
           <el-dropdown menu-align="start" trigger="click">
             <span class="el-dropdown-link">
-              <h2>配件</h2>
+              <h2>&nbsp;&nbsp;&nbsp;&nbsp;配件</h2>
             </span>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>
@@ -73,7 +73,7 @@
         <el-row type="flex" justify="center">
           <el-dropdown menu-align="start" trigger="click">
             <span class="el-dropdown-link">
-              <h2>APP下载</h2>
+              <h2>&nbsp;&nbsp;&nbsp;APP下载</h2>
             </span>
             <!-- <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>心电设备</el-dropdown-item>

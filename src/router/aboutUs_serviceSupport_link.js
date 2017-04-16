@@ -171,8 +171,24 @@ export const joinUs = [
 
 export const links = [
   {
-    'url': 'javascript;',
-    'name': '友情链接'
+    'url': 'http://www.voicecloud.cn',
+    'name': '科大讯飞'
+  },
+  {
+    'url': 'http://www.xiniu.com/',
+    'name': '犀牛云'
+  },
+  {
+    'url': 'http://www.efrobot.com/',
+    'name': '小胖机器人'
+  },
+  {
+    'url': 'http://www.dji.com/cn',
+    'name': '大疆无人机'
+  },
+  {
+    'url': 'http://szrobot.org.cn/',
+    'name': '机器人协会'
   }
 ]
 
@@ -188,11 +204,23 @@ import lettersPatent9 from '../assets/img/letters_patent9.jpg'
 export const patentCertificate = [
   {
     'title': '实用新型证书',
+    'url': lettersPatent9
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent8
+  },
+  {
+    'title': '实用新型证书',
     'url': lettersPatent1
   },
   {
     'title': '实用新型证书',
     'url': lettersPatent2
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent7
   },
   {
     'title': '实用新型证书',
@@ -205,18 +233,6 @@ export const patentCertificate = [
   {
     'title': '实用新型证书',
     'url': lettersPatent6
-  },
-  {
-    'title': '实用新型证书',
-    'url': lettersPatent7
-  },
-  {
-    'title': '实用新型证书',
-    'url': lettersPatent8
-  },
-  {
-    'title': '实用新型证书',
-    'url': lettersPatent9
   }
 ]
 
