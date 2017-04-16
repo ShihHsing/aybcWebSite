@@ -25,7 +25,7 @@
           </el-row>  
         </el-col>
         <el-col :xs="24" :sm="24" :md="20" :lg="20">
-          <transition name="fade">
+          <transition name="fade" mode="out-in">
             <router-view></router-view>
           </transition>
         </el-col>

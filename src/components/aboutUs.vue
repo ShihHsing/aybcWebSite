@@ -12,20 +12,22 @@
                 </router-link>
               </li>
               <div class="serverHr"></div>
-              <template v-for="item in path">
-                <el-col :xs="4" :sm="4" :md="24" :lg="24">
-                  <li>
-                    <router-link :to="{ 'path': item.path, activeClass: 'active'}">
-                      <h3>{{ item.title }}</h3>
-                    </router-link>
-                  </li>
-                </el-col>
-              </template>
+              <el-row>
+                <template v-for="item in path">
+                  <el-col :xs="4" :sm="4" :md="24" :lg="24">
+                    <li>
+                      <router-link :to="{ 'path': item.path, activeClass: 'active'}">
+                        <h3>{{ item.title }}   </h3>
+                      </router-link>
+                    </li>
+                  </el-col>
+                </template>
+              </el-row>
             </ul>
           </el-row>  
         </el-col>
         <el-col :xs="24" :sm="24" :md="19" :lg="19">
-          <transition name="fade">
+          <transition name="fade" mode="out-in">
             <router-view></router-view>
           </transition>
         </el-col>

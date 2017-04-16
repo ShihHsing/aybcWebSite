@@ -4,7 +4,7 @@
       <topNavigation></topNavigation>
     </div>
     <!-- 路由出口 -->
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
     <router-view name="a"></router-view>
@@ -12,7 +12,7 @@
     <links></links>
     <!-- foot-view -->
     <footView></footView>
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <div class="backTop" v-show="scrolled > 400" v-on:click="smoothness(0)"></div>
     </transition>
   </div>

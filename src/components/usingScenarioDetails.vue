@@ -6,7 +6,7 @@
       <li></li>
       <li></li>
     </ul>
-    <transition name="fade">
+    <transition name="fade" mode="out-in">
       <ul class="floorNav" v-show="scrolled > 400">
         <li v-on:click="smoothness(850)"></li>
         <li v-on:click="smoothness(1600)"></li>

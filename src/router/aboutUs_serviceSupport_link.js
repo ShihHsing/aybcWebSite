@@ -138,3 +138,115 @@ export const company = {
   'phone': '电话:0755-83667791',
   'email': '传真:0755-83667791'
 }
+
+export const hardware = {
+  'trumpet': {
+    'title': '喇叭',
+    'describe': '喇叭使用了D类功放芯片，抗干扰能力强，音质纯美悦耳。加上圆柱体腔体，将声波回荡形成共鸣音腔，将声波二次放大，360度全向扩散，最终能得到响亮悦耳的音质。'
+  },
+  'intelligentIdentification': {
+    'title': '智能识别',
+    'describe': '机器固然可以通过视觉，听觉识别人的存在，而红外线则是一种更快的识别方式。人体的散热方式之一就是热辐射，也就是红外线。我们将红外线感应技术创新并应用到哎哟不错导购机器人身上，令机器人能够感应人身上散发的红外线，从而通过我们的一套算法测量出距离。当有人靠近，哎哟不错机器人便能利用该特制感应芯片感应来客并迅速做出回应'
+  },
+  'panel': {
+    'title': '触屏面板',
+    'describe': '现代人离不开手机，每个都是触屏的资深行家，好不好，用了就知道。为了满足他们的触感，我们选择了液晶面板中技术最为出色的IPS屏幕，其色彩失真度最低，同时还具备178度的广角可视角度。使用高对比度技术，对比度高达1400：1，这意味着屏幕亮白的部分是黑暗部分的1400倍，白色更显雪白，黑色更显纯黑，画面更加锐利醒目。超过80%NTSC色域的饱和度，百分比越高表明屏幕越鲜艳，饱和度高色彩的屏幕能给商品展示一个栩栩如生的舞台。'
+  },
+  'detector': {
+    'title': '心电心率检测仪',
+    'describe': '具有优异的微感应处理能力，放大和提取人体心脏活动的电生理信号，处理后转化成通俗易懂的分析导图，直观呈现您的身体状况。目前，心电心率检测仪能够准确测出人体6项心脏健康指标与6项压力指标，功能十分强大。'
+  }
+}
+
+export const joinUs = [
+  {
+    'post': '全栈工程师',
+    'time': '2017-03-13',
+    'department': '研发部',
+    'numberPeople': '1',
+    'positionStatement': '1、负责公司产品的后端服务开发 优化和搭建后端框架，并不断完善<br />2、负责将需求转化为文档，文档转化为产品，并持续分析',
+    'asDemand': '1、本科以上学历，计算机、软件工程等相关专业</br>2、 精通任意一门适合后端的语言，如Java，Python，Ruby等，至少熟悉一门其他语言'
+  }
+]
+
+export const links = [
+  {
+    'url': 'javascript;',
+    'name': '友情链接'
+  }
+]
+
+import lettersPatent1 from '../assets/img/letters_patent1.jpg'
+import lettersPatent2 from '../assets/img/letters_patent2.jpg'
+import lettersPatent4 from '../assets/img/letters_patent4.jpg'
+import lettersPatent5 from '../assets/img/letters_patent5.jpg'
+import lettersPatent6 from '../assets/img/letters_patent6.jpg'
+import lettersPatent7 from '../assets/img/letters_patent7.jpg'
+import lettersPatent8 from '../assets/img/letters_patent8.jpg'
+import lettersPatent9 from '../assets/img/letters_patent9.jpg'
+
+export const patentCertificate = [
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent1
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent2
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent4
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent5
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent6
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent7
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent8
+  },
+  {
+    'title': '实用新型证书',
+    'url': lettersPatent9
+  }
+]
+
+import clothingStore from '../assets/img/clothing_store_1-min.jpg'
+import shoeStore from '../assets/img/shoe_store_1-min.jpg'
+import luggageShop from '../assets/img/luggage_shop_1-min.jpg'
+import lingerieStore from '../assets/img/lingerie_store_1-min.jpg'
+
+export const usingScenario = {
+  'path': '/aybcRobot/usingScenario/usingScenarioDetails',
+  'list': [
+    {
+      'id': 'clothing_store',
+      'img': clothingStore,
+      'name': '服装店_应用场景'
+    },
+    {
+      'id': 'shoe_store',
+      'img': shoeStore,
+      'name': '服装店_应用场景'
+    },
+    {
+      'id': 'luggage_shop',
+      'img': luggageShop,
+      'name': '服装店_应用场景'
+    },
+    {
+      'id': 'lingerie_store',
+      'img': lingerieStore,
+      'name': '服装店_应用场景'
+    }
+  ]
+}
