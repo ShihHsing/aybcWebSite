@@ -18,17 +18,17 @@
       <el-table-column type="expand">
         <template scope="props">
           <el-form label-position="left" inline class="demo-table-expand">
-            <el-form-item label="部门:">
-              <span>{{ props.row.department }}</span>
+            <!-- <el-form-item label="部门:">
+              <span v-html="props.row.department"></span>
             </el-form-item>
             <el-form-item label="人数:">
-              <span>{{ props.row.numberPeople }}</span>
-            </el-form-item>
+              <span v-html="props.row.numberPeople"></span>
+            </el-form-item> -->
             <el-form-item label="岗位职责:">
-              <span>{{ props.row.positionStatement }}</span>
+              <span v-html="props.row.positionStatement"></span>
             </el-form-item>
             <el-form-item label="任职需求:">
-              <span>{{ props.row.asDemand }}</span>
+              <span v-html="props.row.asDemand"></span>
             </el-form-item>
           </el-form>
         </template>
