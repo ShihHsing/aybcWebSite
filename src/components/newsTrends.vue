@@ -63,12 +63,7 @@
       }
     },
     data () {
-      return {
-        currentPage1: 5,
-        currentPage2: 5,
-        currentPage3: 5,
-        currentPage4: 4
-      }
+      return {}
     }
   }
 </script>
