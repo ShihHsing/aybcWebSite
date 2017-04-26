@@ -1,93 +1,136 @@
 // 0. 如果使用模块化机制编程，導入Vue和VueRouter，要调用 Vue.use(VueRouter)
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-Vue.use(VueRouter);
-// 1. 定义（路由）组件。
-// 可以从其他文件 import 进来
-// 首页
-import Home from '.././components/home.vue';
-import HomeVideo from '.././components/homeVideo.vue';
-// 服务与支持
-import ServiceSupport from '.././components/ServiceSupport.vue';
-// 购买须知
-import PurchaseNotes from '.././components/PurchaseNotes.vue';
-// 保修承诺
-import Warranty from '.././components/warranty.vue';
-// 常见问题与解决方案
-import CommonProblems from '.././components/commonProblems.vue';
-// 关于我们
-import AboutUs from '.././components/aboutUs.vue';
-// 公司简介
-import CompanyProfile from '.././components/companyProfile.vue';
-// 新闻动态
-import NewsTrends from '.././components/newsTrends.vue';
-// 加入我们
-import JoinUs from '.././components/joinUs.vue';
-// 联系我们
-import ContactUs from '.././components/contactUs.vue';
-// 专利证书
-import PatentCertificate from '.././components/patentCertificate.vue';
-// aybc机器人
-import AybcRobot from '.././components/aybcRobot.vue';
-// 基础功能
-import BasisFunction from '.././components/basisFunction.vue';
-// 基础功能详情
-import BasisFunctionDetails from '.././components/basisFunctionDetails.vue';
-// 场景运用
-import UsingScenario from '.././components/usingScenario.vue';
-// 场景运用_详情
-import UsingScenarioDetails from '.././components/usingScenarioDetails.vue';
-// 硬件 
-import Hardware from '.././components/hardware.vue';
-// 参数
-import Parameter from '.././components/parameter.vue';
-// 安装视频
-import InstallVideo from '.././components/installVideo.vue';
-// 宣传视频
-import PublicityVideo from '.././components/publicityVideo.vue';
-// 心电心率
-import Diagnostic from '.././components/diagnostic.vue';
-// 预约招商
-import Order from '.././components/order.vue';
-// 2. 定义路由
-// 每个路由应该映射一个组件。 其中"component" 可以是
-// 通过 Vue.extend() 创建的组件构造器，
-// 或者，只是一个组件配置对象。
-// 我们晚点再讨论嵌套路由。
-//  alias: '/'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+// import HomeVideo from '.././components/homeVideo.vue'
+
 const routes = [
-  { path: '/home', components: { default: Home, a: HomeVideo }},
-  { path: '/serviceSupport', component: ServiceSupport,
+  {
+    path: '/home',
+    component: resolve => require(['../components/home.vue'],
+      resolve)
+  },
+  {
+    path: '/serviceSupport', // 服务与支持
+    component: resolve => require(['../components/ServiceSupport.vue'],
+      resolve),
     children: [
-      { path: '/serviceSupport/purchaseNotes', component: PurchaseNotes },
-      { path: '/serviceSupport/warranty', component: Warranty },
-      { path: '/serviceSupport/commonProblems', component: CommonProblems }
+      {
+        path: '/serviceSupport/purchaseNotes', // 购买须知
+        component: resolve => require(['../components/purchaseNotes.vue'],
+      resolve)
+      },
+      {
+        path: '/serviceSupport/warranty', // 保修承诺
+        component: resolve => require(['../components/warranty.vue'],
+      resolve)
+      },
+      {
+        path: '/serviceSupport/commonProblems', // 常见问题与解决方案
+        component: resolve => require(['../components/commonProblems.vue'],
+      resolve)
+      }
     ]
   },
-  { path: '/aboutUs', component: AboutUs,
+  {
+    path: '/aboutUs', // 关于我们
+    component: resolve => require(['../components/aboutUs.vue'],
+      resolve),
     children: [
-      { path: '/aboutUs/companyProfile', component: CompanyProfile },
-      { path: '/aboutUs/newsTrends', component: NewsTrends },
-      { path: '/aboutUs/joinUs', component: JoinUs },
-      { path: '/aboutUs/contactUs', component: ContactUs },
-      { path: '/aboutUs/patentCertificate', component: PatentCertificate },
+      {
+        path: '/aboutUs/companyProfile', // 公司简介
+        component: resolve => require(['../components/companyProfile.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/newsTrends', // 公司动态
+        component: resolve => require(['../components/newsTrends.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/newsIndustry', // 行业动态
+        component: resolve => require(['../components/newsIndustry.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/joinUs', // 加入我们
+        component: resolve => require(['../components/joinUs.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/contactUs', // 联系我们
+        component: resolve => require(['../components/contactUs.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/patentCertificate', // 专利证书
+        component: resolve => require(['../components/patentCertificate.vue'],
+      resolve)
+      }
     ]
   },
-  { path: '/aybcRobot', component: AybcRobot,
+  {
+    path: '/aybcRobot', // aybc机器人
+    component: resolve => require(['../components/aybcRobot.vue'],
+      resolve),
     children: [
-      { path: '/aybcRobot/basisFunction', component: BasisFunction },
-      { path: '/aybcRobot/basisFunction/basisFunctionDetails', component: BasisFunctionDetails },
-      { path: '/aybcRobot/usingScenario', component: UsingScenario },
-      { path: '/aybcRobot/usingScenario/usingScenarioDetails', component: UsingScenarioDetails },
-      { path: '/aybcRobot/parameter', component: Parameter },
-      { path: '/aybcRobot/installVideo', component: InstallVideo },
-      { path: '/aybcRobot/publicityVideo', component: PublicityVideo },
-      { path: '/aybcRobot/diagnostic', component: Diagnostic },
-      { path: '/aybcRobot/order', component: Order },
+      {
+        path: '/aybcRobot/basisFunction', // 基础功能
+        component: resolve => require(['../components/basisFunction.vue'],
+      resolve)
+      },
+      {
+        path: '/aybcRobot/basisFunction/basisFunctionDetails', // 基础功能详情
+        component: resolve => require(['../components/basisFunctionDetails.vue'],
+      resolve)
+      },
+      {
+        path: '/aybcRobot/usingScenario', // 场景运用
+        component: resolve => require(['../components/usingScenario.vue'],
+      resolve)
+      },
+      {
+        path: '/aybcRobot/usingScenario/usingScenarioDetails', // 场景运用_详情
+        component: resolve => require(['../components/usingScenarioDetails.vue'],
+      resolve)
+      },
+      {
+        path: '/aybcRobot/parameter', // 参数
+        component: resolve => require(['../components/parameter.vue'],
+      resolve)
+      },
+      // {
+      //   path: '/aybcRobot/installVideo', // 安装视频
+      //   component: resolve => require(['../components/installVideo.vue'],
+      // resolve),
+      // },
+      // {
+      //   path: '/aybcRobot/publicityVideo', // 宣传视频
+      //   component: resolve => require(['../components/publicityVideo.vue'],
+      // resolve),
+      // },
+      {
+        path: '/aybcRobot/diagnostic', // 心电心率
+        component: resolve => require(['../components/diagnostic.vue'],
+      resolve)
+      },
+      {
+        path: '/aybcRobot/order', // 预约招商
+        component: resolve => require(['../components/order.vue'],
+      resolve)
+      }
     ]
   },
-  { path: '/hardware', component: Hardware},
-  { path: '*', redirect: '/home' }
+  {
+    path: '/hardware', // 硬件
+    component: resolve => require(['../components/hardware.vue'],
+      resolve)
+  },
+  {
+    path: '*', // 首页
+    redirect: '/home'
+  }
 ]
 
 // 3. 创建 router 实例，然后传 `routes` 配置
@@ -99,8 +142,8 @@ const router = new VueRouter({
 router.afterEach(route => {
   // ...
   // 返回页面头部!
-  document.documentElement.scrollTop = document.body.scrollTop = 0;
+  document.documentElement.scrollTop = document.body.scrollTop = 0
 })
 // 4. 开放输出。
-export default router;
+export default router
 // 现在，应用已经启动了！

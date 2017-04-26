@@ -37,13 +37,11 @@
 </template>
 
 <script>
-  import '../assets/less/commonProblems.less';
+  import '../assets/less/commonProblems.less'
   export default{
     name: 'commonProblems',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>

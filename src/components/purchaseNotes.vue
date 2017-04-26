@@ -23,13 +23,11 @@
 </template>
 
 <script>
-  import '.././assets/less/purchaseNotes.less';
+  import '.././assets/less/purchaseNotes.less'
   export default{
     name: 'purchaseNotes',
     data () {
-      return {
-        
-      }
+      return {}
     }
   }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div id="order">
-    <h3>跨界共赢未来,招商共筑蓝图</h3>
+    <h3 class="order_title">跨界共赢未来,招商共筑蓝图</h3>
     <el-row class="from_order">
       <el-col :sapn="24">
         <el-input v-model="name" placeholder="姓名" class="input"></el-input>
@@ -13,6 +13,13 @@
           </el-option>
         </el-select>
         <el-input v-model="phoneNumber" placeholder="电话号码" class="input"></el-input>
+        <el-input
+          type="textarea"
+          :rows="2"
+          placeholder="请输入门店地址"
+          v-model="address"
+          class="input">
+        </el-input>
         <el-button type="primary" class="input" @click="addOrderUser();">提交</el-button>
       </el-col> 
     </el-row>
@@ -20,7 +27,7 @@
 </template>
 
 <script>
-  import '../assets/less/order.less';
+  import '../assets/less/order.less'
   export default{
     name: 'order',
     data () {
@@ -35,12 +42,13 @@
         name: '',
         sex: '',
         phoneNumber: '',
+        address: '',
         url: 'http://www.aybc.so/aybcadmin/website/addOrder'
       }
     },
     methods: {
       addOrderUser () {
-        var phoneReg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+        var phoneReg = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
         if (this.name) {
           // statement
           if (this.sex) {
@@ -49,51 +57,39 @@
               // statement
               if (phoneReg.test(this.phoneNumber)) {
                 // statement
-                this.$http.post(this.url,{
-                  name: this.name,
-                  phone_number: this.phoneNumber,
+                this.$http.post(this.url, {
+                  'name': this.name,
+                  'phone_number': this.phoneNumber,
                   sex: this.sex
-                },{
+                }, {
                   emulateJSON: true
                 })
-                .then( (msg) => {
-                  console.log(msg);
-                  if (msg.data.flag == '1000') {
+                .then((msg) => {
+                  console.log(msg)
+                  if (msg.data.flag === '1000') {
                     // statement
-                    alert('稍后会有专人跟您联系!请注意接听电话!');
-                    window.location.reload();
+                    window.alert('稍后会有专人跟您联系!请注意接听电话!')
+                    window.location.reload()
                   } else {
-                    alert(msg.data.return_code)
+                    window.alert(msg.data.return_code)
                   }
                 }, (response) => {
-                  alert(response.data.return_code)
+                  window.alert(response.data.return_code)
                 })
               } else {
-                alert('输入手机号有误!请重新输出!')
+                window.alert('输入手机号有误!请重新输出!')
               }
             } else {
-              alert('手机号码不能为空')
+              window.alert('手机号码不能为空')
             }
           } else {
-            alert('请选择性别!')
+            window.alert('请选择性别!')
           }
         } else {
-          alert('请完善您的姓名!')
+          window.alert('请完善您的姓名!')
         }
         // this.$http.post()
       }
     }
   }
 </script>
-
-<style lang="less">
-@media (max-width: 1200px){
-
-}
-@media (max-width: 992px){
-  
-}
-@media (max-width: 768px){
-  
-}
-</style>
