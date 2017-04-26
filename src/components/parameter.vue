@@ -90,7 +90,7 @@
       <el-col :span="12">
         <ul>
           <li>
-            <h5>Andriod 5.1</h5>
+            <h5>Android 5.1</h5>
           </li>
         </ul>
       </el-col>
@@ -102,7 +102,7 @@
       <el-col :span="12">
         <ul>
           <li>
-            <h5>Cortx-A17 四核7.8GHz</h5>
+            <h5>Cortx-A17 四核1.8GHz</h5>
           </li>
         </ul>
       </el-col>

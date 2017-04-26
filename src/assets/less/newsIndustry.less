@@ -1,0 +1,102 @@
+.newsList{
+  width: 100%;
+  height: 300px;
+  padding-top: 25px;
+  .newsImg{
+    height: 100%;
+    background: url(../img/news_r4_c2-min.jpg) #2E3037 no-repeat center center;
+  }
+  .newsContent{
+    height: 100%;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    background-color: #2E3037;
+    h3{
+      font-size: 28px!important;
+      color: #ccc;
+      padding: 5px 0;
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
+    h4{
+      font-size: 12px;
+      color: #999;
+      padding: 15px 0 20px 0;
+      border-bottom: 1px solid #25272D;
+    }
+    p{
+      font-size: 12px;
+      color: #999;
+      margin: 16px 0;
+      text-indent: 24px;
+      height: 94px;
+      width: 100%;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 6;
+      overflow: hidden;
+    }
+    .newsParticulars{
+      a{
+        font-size: 12px;
+        color: #999;
+        float: right;
+        padding-right: 15px;
+        background: url(../img/news_r22_c21-min.jpg) no-repeat center right;
+      }
+    }
+    @media (max-width: 768px){
+      h3{
+        font-size: 16px!important;
+      }
+    }
+  }
+  @media (max-width: 768px){
+    .newsImg{
+      display: none!important;
+    }
+  }
+}
+
+.el-pagination{
+  margin-top: 40px;
+  .btn-prev,.btn-next{
+    background: #2E3037!important;
+    border: 0!important;
+    margin: 0 5px!important;
+  }
+  ul{
+    li{
+      padding: 0 4px!important;
+      background: #2E3037!important;
+      border: 0!important;
+      color: #ccc;
+      margin: 0 5px;
+      &:hover{
+        color: #ccc!important;
+      }
+    }
+    .active{
+      background: #0057A8!important;
+    }
+  }
+  .el-pagination__editor{
+    border: 0!important;
+    background: #43454F!important;
+    color: #ccc;
+  }
+  .el-pagination__jump{
+    color: #ccc;
+  }
+}
+
+
+@media (max-width: 1200px){
+
+}
+@media (max-width: 992px){
+  
+}

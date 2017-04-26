@@ -44,8 +44,13 @@ const routes = [
       resolve)
       },
       {
-        path: '/aboutUs/newsTrends', // 新闻动态
+        path: '/aboutUs/newsTrends', // 公司动态
         component: resolve => require(['../components/newsTrends.vue'],
+      resolve)
+      },
+      {
+        path: '/aboutUs/newsIndustry', // 行业动态
+        component: resolve => require(['../components/newsIndustry.vue'],
       resolve)
       },
       {

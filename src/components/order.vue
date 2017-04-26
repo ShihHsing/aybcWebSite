@@ -13,6 +13,13 @@
           </el-option>
         </el-select>
         <el-input v-model="phoneNumber" placeholder="电话号码" class="input"></el-input>
+        <el-input
+          type="textarea"
+          :rows="2"
+          placeholder="请输入门店地址"
+          v-model="address"
+          class="input">
+        </el-input>
         <el-button type="primary" class="input" @click="addOrderUser();">提交</el-button>
       </el-col> 
     </el-row>
@@ -35,6 +42,7 @@
         name: '',
         sex: '',
         phoneNumber: '',
+        address: '',
         url: 'http://www.aybc.so/aybcadmin/website/addOrder'
       }
     },

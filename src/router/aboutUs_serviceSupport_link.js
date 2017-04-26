@@ -5,7 +5,11 @@ export const aboutUs = [
   },
   {
     'path': '/aboutUs/newsTrends',
-    'title': '新闻动态'
+    'title': '公司动态'
+  },
+  {
+    'path': '/aboutUs/newsIndustry',
+    'title': '行业动态'
   },
   {
     'path': '/aboutUs/joinUs',
@@ -195,24 +199,16 @@ export const joinUs = [
 
 export const links = [
   {
-    'url': 'http://www.voicecloud.cn',
-    'name': '科大讯飞'
+    'url': 'http://weibo.com/u/5759043898?profile_ftype=1&is_all=1#_0',
+    'name': '哎哟不错科研微博'
   },
   {
-    'url': 'http://www.xiniu.com/',
-    'name': '犀牛云'
+    'url': 'http://baike.baidu.com/item/%E6%B7%B1%E5%9C%B3%E5%B8%82%E5%93%8E%E5%93%9F%E4%B8%8D%E9%94%99%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%A7%91%E7%A0%94%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8',
+    'name': '哎哟不错百科'
   },
   {
-    'url': 'http://www.efrobot.com/',
-    'name': '小胖机器人'
-  },
-  {
-    'url': 'http://www.dji.com/cn',
-    'name': '大疆无人机'
-  },
-  {
-    'url': 'http://szrobot.org.cn/',
-    'name': '机器人协会'
+    'url': 'http://www.huajiao.com/user/90897483',
+    'name': '哎哟不错直播'
   }
 ]
 

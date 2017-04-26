@@ -1,7 +1,7 @@
 <template>
   <div id="links">
     <div class="links">
-      <el-row>
+      <el-row type="flex" justify="space-between">
         <el-col :xs="6" :sm="4" :md="3" :lg="3">
           <a href="javascript;" style="color: #ccc;">友情链接</a>
         </el-col>
