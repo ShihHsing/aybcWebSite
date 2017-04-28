@@ -140,7 +140,6 @@ const router = new VueRouter({
 })
 
 router.afterEach(route => {
-  // ...
   // 返回页面头部!
   document.documentElement.scrollTop = document.body.scrollTop = 0
 })

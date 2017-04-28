@@ -1,17 +1,17 @@
 <template>
   <div id="usingScenarioDetails">
     <ul class="usingScenarioDetailsImg">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+      <li id="clothing_store"></li>
+      <li id="shoe_store"></li>
+      <li id="luggage_shop"></li>
+      <li id="lingerie_store"></li>
     </ul>
     <transition name="fade" mode="out-in">
-      <ul class="floorNav" v-show="scrolled > 400">
-        <li v-on:click="smoothness(650)"></li>
-        <li v-on:click="smoothness(1400)"></li>
-        <li v-on:click="smoothness(2200)"></li>
-        <li v-on:click="smoothness(3000)"></li>
+      <ul class="floorNav">
+        <li @click="jump('clothing_store')"></li>
+        <li @click="jump('shoe_store')"></li>
+        <li @click="jump('luggage_shop')"></li>
+        <li @click="jump('lingerie_store')"></li>
       </ul>
     </transition>
   </div>
@@ -22,71 +22,73 @@
   export default{
     name: 'usingScenarioDetails',
     data () {
-      return {
-        scrolled: '',
-        width: ''
-      }
+      return {}
     },
     methods: {
-      handleScroll () {
-        this.scrolled = window.scrollY
-        this.width = window.screen.width
-      },
-      smoothness (num) {
-        var scrolled = this.scrolled
-        var time = null
-        if (this.scrolled > num) {
-          time = setInterval(() => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled -= 50
-            if (scrolled <= num) {
-              window.clearInterval(time)
-              document.documentElement.scrollTop = document.body.scrollTop = num
-            }
-          }, 1)
+      jump (selector) {
+        const jump = document.getElementById(selector)
+        const total = jump.offsetTop
+        let distance = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+         // 平滑滚动，时长500ms，每10ms一跳，共50跳
+        let step = total / 50
+        if (total > distance) {
+          smoothDown()
         } else {
-          time = setInterval(() => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled += 50
-            if (scrolled >= num) {
-              window.clearInterval(time)
-              document.documentElement.scrollTop = document.body.scrollTop = num
-            }
-          }, 1)
+          const newTotal = distance - total
+          step = newTotal / 50
+          smoothUp()
+        }
+        function smoothDown () {
+          if (distance < total) {
+            distance += step
+            document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            window.pageYOffset = distance
+            setTimeout(smoothDown, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+            window.pageYOffset = total
+          }
+        }
+        function smoothUp () {
+          if (distance > total) {
+            distance -= step
+            document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            window.pageYOffset = distance
+            setTimeout(smoothUp, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+            window.pageYOffset = total
+          }
         }
       },
-      anchor (num) {
+      init () {
         console.log(this.$route.query.id)
         switch (this.$route.query.id) {
           case 'clothing_store':
-            this.smoothness(650 / num)
+            this.jump('clothing_store')
             break
           case 'shoe_store':
-            this.smoothness(1400 / num)
+            this.jump('shoe_store')
             break
           case 'luggage_shop':
-            this.smoothness(2200 / num)
+            this.jump('luggage_shop')
             break
           case 'lingerie_store':
-            this.smoothness(3000 / num)
+            this.jump('lingerie_store')
             break
           default:
-            this.smoothness(0)
+            this.jump('clothing_store')
             break
         }
       }
     },
-    created () {
-      window.addEventListener('scroll', this.handleScroll)
+    created: function () {
       setTimeout(() => {
-        console.log('开始')
-        if (this.width < 767) {
-          console.log(2)
-          this.anchor(3.5)
-        } else if (this.width < 993) {
-          console.log(3)
-          this.anchor(1.9)
-        } else {
-          this.anchor(1)
-        }
+        this.init()
       }, 800)
     }
   }

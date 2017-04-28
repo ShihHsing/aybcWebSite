@@ -3,14 +3,14 @@ export const aboutUs = [
     'path': '/aboutUs/companyProfile',
     'title': '公司简介'
   },
-  {
-    'path': '/aboutUs/newsTrends',
-    'title': '公司动态'
-  },
-  {
-    'path': '/aboutUs/newsIndustry',
-    'title': '行业动态'
-  },
+  // {
+  //   'path': '/aboutUs/newsTrends',
+  //   'title': '公司动态'
+  // },
+  // {
+  //   'path': '/aboutUs/newsIndustry',
+  //   'title': '行业动态'
+  // },
   {
     'path': '/aboutUs/joinUs',
     'title': '加入我们'
@@ -47,18 +47,18 @@ export const aybcRobot = {
 
 export const copyright = 'Copyright&copy;2017深圳市哎哟不错机器人科研有限公司All rights reserved 粤ICP备16038767号'
 
-import voiceinteraction from '../assets/img/voice_interaction-min.jpg'
-import ecgheartrate from '../assets/img/ecg_heart_rate-min.jpg'
-import dFitting from '../assets/img/3d_fitting-min.jpg'
-import hitGoldenEggs from '../assets/img/hit_golden_eggs-min.jpg'
-import luckyBigWheel from '../assets/img/lucky_big_whee-min.jpg'
-import preferential from '../assets/img/preferential-min.jpg'
-import product from '../assets/img/product-min.jpg'
-import promotion from '../assets/img/promotion-min.jpg'
-import music from '../assets/img/music-min.jpg'
-import advertising from '../assets/img/advertising-min.jpg'
-import careProject from '../assets/img/care_project-min.jpg'
-import live from '../assets/img/live-min.jpg'
+import voiceinteraction from '../assets/img/voice_interaction.png'
+import ecgheartrate from '../assets/img/ecg_heart_rate.png'
+import dFitting from '../assets/img/3d_fitting.png'
+import hitGoldenEggs from '../assets/img/hit_golden_eggs.png'
+import luckyBigWheel from '../assets/img/lucky_big_whee.png'
+import preferential from '../assets/img/preferential.png'
+import product from '../assets/img/product.png'
+import promotion from '../assets/img/promotion.png'
+import music from '../assets/img/music.png'
+import advertising from '../assets/img/advertising.png'
+import careProject from '../assets/img/care_project.png'
+import live from '../assets/img/live.png'
 
 export const basisFunction = [
   {
@@ -131,8 +131,9 @@ export const contact = [
   },
   {
     'title': '联系方式:',
-    'sub_title': '联系电话:0755-83667791',
-    'end_title': '邮箱:szaybc@126.com'
+    'sub_title': '联系电话: 0755-83667791',
+    'end_title': '邮箱: szaybc@126.com',
+    'QQ': 'QQ: 2042234080'
   }
 ]
 
@@ -146,19 +147,19 @@ export const company = {
 export const hardware = {
   'trumpet': {
     'title': '喇叭',
-    'describe': '喇叭使用了D类功放芯片，抗干扰能力强，音质纯美悦耳。加上圆柱体腔体，将声波回荡形成共鸣音腔，将声波二次放大，360度全向扩散，最终能得到响亮悦耳的音质。'
+    'describe': '喇叭模块精选D类功放类芯片，抗干扰能力强，保证声音输出纯美干净。加上圆柱体腔体，声波回荡形成共鸣，将声波二次放大，360度全向扩散，最终能得到响亮悦耳的音质。'
   },
   'intelligentIdentification': {
     'title': '智能识别',
-    'describe': '机器固然可以通过视觉，听觉识别人的存在，而红外线则是一种更快的识别方式。人体的散热方式之一就是热辐射，也就是红外线。我们将红外线感应技术创新并应用到哎哟不错导购机器人身上，令机器人能够感应人身上散发的红外线，从而通过我们的一套算法测量出距离。当有人靠近，哎哟不错机器人便能利用该特制感应芯片感应来客并迅速做出回应'
+    'describe': '红外线是机器识别人体最快速的方式，我们将红外线感应技术融入自主研发深度算法，令机器人准确感应人身上散发的红外线。当有人靠近，哎哟不错机器人便能迅速做出回应。'
   },
   'panel': {
     'title': '触屏面板',
-    'describe': '现代人离不开手机，每个都是触屏的资深行家，好不好，用了就知道。为了满足他们的触感，我们选择了液晶面板中技术最为出色的IPS屏幕，其色彩失真度最低，同时还具备178度的广角可视角度。使用高对比度技术，对比度高达1400：1，这意味着屏幕亮白的部分是黑暗部分的1400倍，白色更显雪白，黑色更显纯黑，画面更加锐利醒目。超过80%NTSC色域的饱和度，百分比越高表明屏幕越鲜艳，饱和度高色彩的屏幕能给商品展示一个栩栩如生的舞台。'
+    'describe': '电视、车载、手机、电脑，现代人离不开屏幕，为了视觉效果鲜艳清晰，我们选择了液晶面板中技术最为出色的IPS屏幕，其色彩失真度最低，具备178度超广角可视角度。在营造肉眼的视觉效果中，更能栩栩如生地展示商品。'
   },
   'detector': {
     'title': '心电心率检测仪',
-    'describe': '具有优异的微感应处理能力，放大和提取人体心脏活动的电生理信号，处理后转化成通俗易懂的分析导图，直观呈现您的身体状况。目前，心电心率检测仪能够准确测出人体6项心脏健康指标与6项压力指标，功能十分强大。'
+    'describe': '具有放大和提取人体心脏活动的微感应处理优势，处理后转化成通俗易懂的分析导图，直观呈现身体状况。目前，心电心率检测仪能够准确测出人体6项心脏健康指标与6项压力指标，功能十分强大。'
   }
 }
 

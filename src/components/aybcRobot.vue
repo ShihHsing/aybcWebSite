@@ -1,6 +1,6 @@
 <template>
   <div id="aybcRobot">
-    <div class="topBackground"></div>
+    <div class="topBackground" v-if="aybcRobotTop"></div>
     <div class="aybcRobotBody">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
@@ -15,6 +15,15 @@
     name: 'aybcRobot',
     data () {
       return {}
+    },
+    computed: {
+      aybcRobotTop () {
+        if (this.$route.path === '/aybcRobot/basisFunction/basisFunctionDetails' || this.$route.path === '/aybcRobot/usingScenario/usingScenarioDetails') {
+          return false
+        } else {
+          return true
+        }
+      }
     }
   }
 </script>

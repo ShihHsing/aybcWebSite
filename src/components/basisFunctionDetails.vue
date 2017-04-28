@@ -1,6 +1,19 @@
 <template>
   <div id="basisFunctionDetails">
-    <div class="voice_interaction wrap">
+    <div class="d_fitting wrap" id="d_fitting">
+      <el-row class="text_wrap">
+        <el-col :span="14" class="center">
+          <img src="../assets/img/3d_fitting_picture-min.png" alt="3D试衣_详情">
+        </el-col>
+        <el-col :offset="2" :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">3D试衣</h3>
+            <p>全球首款智能AR内衣试衣平台，利用团队专有仿生物技术，快速塑造专属个性3D模特，试穿效果接近真人试穿，试穿变得自由随性。更能一键预约上门服务和商品同城配送。</p>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+    <div class="voice_interaction wrap" id="voice_interaction">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
           <img src="../assets/img/voice_interaction_picture-min.png" alt="语音互动_详情">
@@ -13,7 +26,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="ecg_heart_rate wrap">
+    <div class="ecg_heart_rate wrap" id="ecg_heart_rate">
       <el-row class="text_wrap">
         <el-col :span="8" class="center">
           <div>
@@ -26,46 +39,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="d_fitting wrap">
-      <el-row class="text_wrap">
-        <el-col :span="14" class="center">
-          <img src="../assets/img/3d_fitting_picture-min.png" alt="3D试衣_详情">
-        </el-col>
-        <el-col :offset="2" :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">3D试衣</h3>
-            <p>留住顾客是打成销售不可或缺的环节。机器人掌握庞大的信息库,包括内衣知识应答机制,能够和顾客聊天、讲故事、讲笑话、唱歌、导购等一系列互动,增加顾客留点的时间,加深门店和产品的认知,促进销售。</p>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
-    <div class="hit_golden_eggs wrap">
-      <el-row class="text_wrap">
-        <el-col :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">砸金蛋</h3>
-            <p>如今砸金蛋无人不知无人不晓，有了机器人，每位一商家也能拥有一套自己的砸金蛋活动。借着机器人的电子砸金蛋模式，能够增强实体门店活动的互动性、娱乐性以及神秘感。商家可以更加丰富地使用砸金蛋，让顾客体验不曾有的乐趣，收获命运中的惊喜。</p>
-          </div>
-        </el-col>
-        <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/hit_golden_eggs_picture-min.png" alt="砸金蛋_详情">
-        </el-col>
-      </el-row>
-    </div>
-    <div class="lucky_big_wheel wrap">
-      <el-row class="text_wrap">
-        <el-col :span="14" class="center">
-          <img src="../assets/img/lucky_big_wheel_picture-min.png" alt="3D试衣_详情">
-        </el-col>
-        <el-col :offset="2" :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">幸运大转盘</h3>
-            <p>抽奖，作为一种销售模式，在各行各业随处可见。然而要做到花样更多，可塑性更强，趣味性更高，中奖率更自由，显然也要花一定的心思。机器人幸运大转盘，实行线下门店电子抽奖的形式，能够智能出奖，快速领奖。更灵活的奖品设置和中奖设置让活动更加得心应手。</p>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
-    <div class="preferential wrap">
+    <div class="preferential wrap" id="preferential">
       <el-row class="text_wrap">
         <el-col :span="8" class="center">
           <div>
@@ -78,7 +52,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="product wrap">
+    <div class="product wrap" id="product">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
           <img src="../assets/img/product_picture-min.png" alt="3D试衣_详情">
@@ -91,7 +65,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="promotion wrap">
+    <div class="promotion wrap" id="promotion">
       <el-row class="text_wrap">
         <el-col :span="8" class="center">
           <div>
@@ -104,10 +78,36 @@
         </el-col>
       </el-row>
     </div>
-    <div class="music wrap">
+    <div class="hit_golden_eggs wrap" id="hit_golden_eggs">
+      <el-row class="text_wrap">
+        <el-col :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">砸金蛋</h3>
+            <p>如今砸金蛋无人不知无人不晓，有了机器人，每位一商家也能拥有一套自己的砸金蛋活动。借着机器人的电子砸金蛋模式，能够增强实体门店活动的互动性、娱乐性以及神秘感。商家可以更加丰富地使用砸金蛋，让顾客体验不曾有的乐趣，收获命运中的惊喜。</p>
+          </div>
+        </el-col>
+        <el-col :offset="2" :span="14" class="center">
+          <img src="../assets/img/hit_golden_eggs_picture-min.png" alt="砸金蛋_详情">
+        </el-col>
+      </el-row>
+    </div>
+    <div class="lucky_big_wheel wrap" id="lucky_big_wheel">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/music_picture-min.png" alt="3D试衣_详情">
+          <img src="../assets/img/lucky_big_wheel_picture-min.png" alt="3D试衣_详情">
+        </el-col>
+        <el-col :offset="2" :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">幸运大转盘</h3>
+            <p>抽奖，作为一种销售模式，在各行各业随处可见。然而要做到花样更多，可塑性更强，趣味性更高，中奖率更自由，显然也要花一定的心思。机器人幸运大转盘，实行线下门店电子抽奖的形式，能够智能出奖，快速领奖。更灵活的奖品设置和中奖设置让活动更加得心应手。</p>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+    <div class="music wrap" id="music">
+      <el-row class="text_wrap">
+        <el-col :span="14" class="center">
+          <img src="../assets/img/music_picture-min.png" alt="音乐平台">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -117,23 +117,10 @@
         </el-col>
       </el-row>
     </div>
-    <div class="advertising wrap">
-      <el-row class="text_wrap">
-        <el-col :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">广告平台</h3>
-            <p>当我们机器人推广到所有奥丝蓝黛时，我们最大的战略目标是分众传媒的第二，机器人传媒。视频广告是一个常态式的盈利点，当使用机器人的群体大增，这个目标基本就可以达到了。</p>
-          </div>
-        </el-col>
-        <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/advertising_picture-min.png" alt="砸金蛋_详情">
-        </el-col>
-      </el-row>
-    </div>
-    <div class="care_project wrap">
+    <div class="care_project wrap" id="care_project">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/care_project_picture-min.png" alt="3D试衣_详情">
+          <img src="../assets/img/care_project_picture-min.png" alt="关爱工程">
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
@@ -143,7 +130,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="live wrap">
+    <div class="live wrap" id="live">
       <el-row class="text_wrap">
         <el-col :span="8" class="center">
           <div>
@@ -152,26 +139,39 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/live_picture-min.png" alt="砸金蛋_详情">
+          <img src="../assets/img/live_picture-min.png" alt="直播">
+        </el-col>
+      </el-row>
+    </div>
+    <div class="advertising wrap" id="advertising">
+      <el-row class="text_wrap">
+        <el-col :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">广告平台</h3>
+            <p>当我们机器人推广到所有奥丝蓝黛时，我们最大的战略目标是分众传媒的第二，机器人传媒。视频广告是一个常态式的盈利点，当使用机器人的群体大增，这个目标基本就可以达到了。</p>
+          </div>
+        </el-col>
+        <el-col :offset="2" :span="14" class="center">
+          <img src="../assets/img/advertising_picture-min.png" alt="广告平台">
         </el-col>
       </el-row>
     </div>
 
 
     <transition name="fade" mode="out-in">
-      <ul class="floorNav" v-show="scrolled > 400">
-        <li v-on:click="smoothness(600);"></li>
-        <li v-on:click="smoothness(1400);"></li>
-        <li v-on:click="smoothness(2200);"></li>
-        <li v-on:click="smoothness(3000);"></li>
-        <li v-on:click="smoothness(3800);"></li>
-        <li v-on:click="smoothness(4600);"></li>
-        <li v-on:click="smoothness(5400);"></li>
-        <li v-on:click="smoothness(6200);"></li>
-        <li v-on:click="smoothness(7000);"></li>
-        <li v-on:click="smoothness(7800);"></li>
-        <li v-on:click="smoothness(8600);"></li>
-        <li v-on:click="smoothness(9400);"></li>
+      <ul class="floorNav">
+        <li v-on:click="jump('d_fitting');"></li>
+        <li v-on:click="jump('voice_interaction');"></li>
+        <li v-on:click="jump('ecg_heart_rate');"></li>
+        <li v-on:click="jump('preferential');"></li>
+        <li v-on:click="jump('product');"></li>
+        <li v-on:click="jump('promotion');"></li>
+        <li v-on:click="jump('hit_golden_eggs');"></li>
+        <li v-on:click="jump('lucky_big_wheel');"></li>
+        <li v-on:click="jump('music');"></li>
+        <li v-on:click="jump('care_project');"></li>
+        <li v-on:click="jump('live');"></li>
+        <li v-on:click="jump('advertising');"></li>
       </ul>
     </transition>
   </div>
@@ -182,94 +182,97 @@
   export default{
     name: 'basisFunctionDetails',
     data () {
-      return {
-        scrolled: '',
-        width: ''
-      }
+      return {}
     },
     methods: {
-      handleScroll () {
-        this.scrolled = window.scrollY
-        this.width = window.screen.width
-      },
-      smoothness (num) {
-        var scrolled = this.scrolled
-        var time = null
-        if (this.scrolled > num) {
-          time = setInterval(() => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled -= 80
-            if (scrolled <= num) {
-              window.clearInterval(time)
-              document.documentElement.scrollTop = document.body.scrollTop = num
-            }
-          }, 1)
+      jump (selector) {
+        const jump = document.getElementById(selector)
+        const total = jump.offsetTop
+        let distance = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+         // 平滑滚动，时长500ms，每10ms一跳，共50跳
+        let step = total / 50
+        if (total > distance) {
+          smoothDown()
         } else {
-          time = setInterval(() => {
-            document.documentElement.scrollTop = document.body.scrollTop = scrolled += 80
-            if (scrolled >= num) {
-              window.clearInterval(time)
-              document.documentElement.scrollTop = document.body.scrollTop = num
-            }
-          }, 1)
+          const newTotal = distance - total
+          step = newTotal / 50
+          smoothUp()
+        }
+        function smoothDown () {
+          if (distance < total) {
+            distance += step
+            document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            window.pageYOffset = distance
+            setTimeout(smoothDown, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+            window.pageYOffset = total
+          }
+        }
+        function smoothUp () {
+          if (distance > total) {
+            distance -= step
+            document.body.scrollTop = distance
+            document.documentElement.scrollTop = distance
+            window.pageYOffset = distance
+            setTimeout(smoothUp, 10)
+          } else {
+            document.body.scrollTop = total
+            document.documentElement.scrollTop = total
+            window.pageYOffset = total
+          }
         }
       },
-
-      anchor (num) {
+      init (num) {
         console.log(this.$route.query.id)
         switch (this.$route.query.id) {
+          case 'd_fitting':
+            this.jump('d_fitting')
+            break
           case 'voice_interaction':
-            this.smoothness(600 / num)
+            this.jump('voice_interaction')
             break
           case 'ecg_heart_rate':
-            this.smoothness(1400 / num)
-            break
-          case 'd_fitting':
-            this.smoothness(2200 / num)
-            break
-          case 'hit_golden_eggs':
-            this.smoothness(3000 / num)
-            break
-          case 'lucky_big_wheel':
-            this.smoothness(3800 / num)
+            this.jump('ecg_heart_rate')
             break
           case 'preferential':
-            this.smoothness(4600 / num)
+            this.jump('preferential')
             break
           case 'product':
-            this.smoothness(5400 / num)
+            this.jump('product')
             break
           case 'promotion':
-            this.smoothness(6200 / num)
+            this.jump('promotion')
+            break
+          case 'hit_golden_eggs':
+            this.jump('hit_golden_eggs')
+            break
+          case 'lucky_big_wheel':
+            this.jump('lucky_big_wheel')
             break
           case 'music':
-            this.smoothness(7000 / num)
-            break
-          case 'advertising':
-            this.smoothness(7800 / num)
+            this.jump('music')
             break
           case 'care_project':
-            this.smoothness(8600 / num)
+            this.jump('care_project')
             break
           case 'live':
-            this.smoothness(9400 / num)
+            this.jump('live')
+            break
+          case 'advertising':
+            this.jump('advertising')
             break
           default:
-            this.smoothness(0)
+            this.jump('d_fitting')
             break
         }
       }
     },
     created () {
-      window.addEventListener('scroll', this.handleScroll)
       setTimeout(() => {
-        console.log('开始')
-        if (this.width < 769) {
-          this.anchor(2.4)
-        } else if (this.width < 993) {
-          this.anchor(1.8)
-        } else {
-          this.anchor(1)
-        }
+        this.init()
       }, 800)
     }
   }

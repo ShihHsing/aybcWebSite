@@ -16,6 +16,7 @@
               <h3>{{ item.title }}</h3>
               <p>{{ item.sub_title }}</p>
               <p>{{ item.end_title }}</p>
+              <p>{{ item.QQ }}</p>
             </div>
           </el-row>
         </el-col>

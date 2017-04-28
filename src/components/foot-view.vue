@@ -2,7 +2,7 @@
 	<div id="foot-view">
 		<div class="subnavigation-wrap">
       <el-row class="subnavigation">
-        <el-col :xs="8" :sm="8" :md="8" :lg="8">
+        <el-col :xs="6" :sm="6" :md="6" :lg="6">
           <el-row type="flex" justify="start">
             <ul>
               <li><router-link to="/aboutUs/companyProfile"><h2>关于我们</h2></router-link></li>
@@ -16,7 +16,7 @@
             </ul>
           </el-row>
         </el-col>
-        <el-col :xs="8" :sm="8" :md="8" :lg="8">
+        <el-col :xs="6" :sm="6" :md="6" :lg="6">
           <el-row type="flex" justify="center">
             <ul>
               <li><router-link to="/serviceSupport/purchaseNotes"><h2>服务与支持</h2></router-link></li>
@@ -30,11 +30,19 @@
             </ul>
           </el-row>
         </el-col>
-        <el-col :xs="8" :sm="8" :md="8" :lg="8">
+        <el-col :xs="6" :sm="6" :md="6" :lg="6">
           <el-row type="flex" justify="end">
             <ul>
               <li><router-link :to="aybcRobot.path"><h2>了解产品</h2></router-link></li>
               <li><router-link :to="aybcRobot.path"><h3>{{ aybcRobot.title }}</h3></router-link></li>
+            </ul>
+          </el-row>
+        </el-col>
+        <el-col :xs="6" :sm="6" :md="6" :lg="6">
+          <el-row type="flex" justify="end">
+            <ul class="wechatServicePostion">
+              <li><router-link to="aybcRobot/order"><h2>招商咨询</h2></router-link></li>
+              <img src="../assets/img/wechatService-min.jpg">
             </ul>
           </el-row>
         </el-col>

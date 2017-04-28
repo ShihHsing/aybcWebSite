@@ -44,13 +44,58 @@ ul,li{
     background: url(../img/backTop-min.png) no-repeat center center;
     background-size: 100% 100%;
   }
+  .contact{
+    position: fixed;
+    right: 0;
+    top: 60%;
+    z-index: 9999999;
+    li{
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:nth-of-type(1){
+        background: url(../img/QQ_default-min.jpg) no-repeat center center;
+        &:hover{
+          background: url(../img/QQ_selected-min.jpg) no-repeat center center;
+        }
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &:nth-of-type(2){
+        background: url(../img/OfficialAccounts_default-min.jpg) no-repeat center center;
+        &:hover{
+          background: url(../img/OfficialAccounts_selected-min.jpg) no-repeat center center;
+        }
+      }
+      &:nth-of-type(3){
+        background: url(../img/wechatService_default-min.jpg) no-repeat center center;
+        &:hover{
+          background: url(../img/wechatService_selected-min.jpg) no-repeat center center;
+        }
+      }
+      &:nth-of-type(4){
+        background: url(../img/top_icon_default-min.jpg) no-repeat center center;
+        margin-top: 15px;
+        &:hover{
+          background: url(../img/top_icon_selected-min.jpg) no-repeat center center;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px){
 
 }
 @media (max-width: 992px){
-  
+  #app{
+    .contact{
+      display: none;
+    }
+  }
 }
 @media (max-width: 768px){
   .body{

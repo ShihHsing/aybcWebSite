@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import { Icon, Button, Col, Row, Dropdown, DropdownMenu, DropdownItem, Carousel, CarouselItem, Pagination, Table, TableColumn, Form, FormItem, Input, Select, Option } from 'element-ui'
+import { Icon, Button, Col, Row, Dropdown, DropdownMenu, DropdownItem, Carousel, CarouselItem, Pagination, Table, TableColumn, Form, FormItem, Input, Select, Option, Dialog } from 'element-ui'
 Vue.use(Icon)
 Vue.use(Button)
 Vue.use(Col)
@@ -17,3 +17,4 @@ Vue.use(FormItem)
 Vue.use(Input)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Dialog)
