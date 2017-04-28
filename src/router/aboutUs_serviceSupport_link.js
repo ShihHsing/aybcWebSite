@@ -213,47 +213,52 @@ export const links = [
   }
 ]
 
-import lettersPatent1 from '../assets/img/letters_patent1.jpg'
-import lettersPatent2 from '../assets/img/letters_patent2.jpg'
-import lettersPatent4 from '../assets/img/letters_patent4.jpg'
-import lettersPatent5 from '../assets/img/letters_patent5.jpg'
-import lettersPatent6 from '../assets/img/letters_patent6.jpg'
-import lettersPatent7 from '../assets/img/letters_patent7.jpg'
-import lettersPatent8 from '../assets/img/letters_patent8.jpg'
-import lettersPatent9 from '../assets/img/letters_patent9.jpg'
+import lettersPatent1 from '../assets/img/1.jpg'
+import lettersPatent2 from '../assets/img/2.jpg'
+import lettersPatent3 from '../assets/img/3.jpg'
+import lettersPatent4 from '../assets/img/3.jpg'
+import lettersPatent5 from '../assets/img/4.jpg'
+import lettersPatent6 from '../assets/img/5.jpg'
+import lettersPatent7 from '../assets/img/6.jpg'
+import lettersPatent8 from '../assets/img/7.jpg'
+import lettersPatent9 from '../assets/img/8.jpg'
 
 export const patentCertificate = [
   {
-    'title': '实用新型证书',
-    'url': lettersPatent9
-  },
-  {
-    'title': '实用新型证书',
-    'url': lettersPatent8
-  },
-  {
-    'title': '实用新型证书',
+    'title': '专利证书',
     'url': lettersPatent1
   },
   {
-    'title': '实用新型证书',
+    'title': '专利证书',
     'url': lettersPatent2
   },
   {
-    'title': '实用新型证书',
-    'url': lettersPatent7
+    'title': '专利证书',
+    'url': lettersPatent3
   },
   {
-    'title': '实用新型证书',
+    'title': '专利证书',
     'url': lettersPatent4
   },
   {
-    'title': '实用新型证书',
+    'title': '专利证书',
     'url': lettersPatent5
   },
   {
-    'title': '实用新型证书',
+    'title': '专利证书',
     'url': lettersPatent6
+  },
+  {
+    'title': '专利证书',
+    'url': lettersPatent7
+  },
+  {
+    'title': '专利证书',
+    'url': lettersPatent8
+  },
+  {
+    'title': '专利证书',
+    'url': lettersPatent9
   }
 ]
 

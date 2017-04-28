@@ -172,6 +172,7 @@
         <li v-on:click="jump('care_project');"></li>
         <li v-on:click="jump('live');"></li>
         <li v-on:click="jump('advertising');"></li>
+        <li v-on:click="jump('d_fitting');"></li>
       </ul>
     </transition>
   </div>

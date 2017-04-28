@@ -12,6 +12,7 @@
         <li @click="jump('shoe_store')"></li>
         <li @click="jump('luggage_shop')"></li>
         <li @click="jump('lingerie_store')"></li>
+        <li @click="jump('clothing_store')"></li>
       </ul>
     </transition>
   </div>
