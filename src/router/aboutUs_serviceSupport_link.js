@@ -67,19 +67,19 @@ export const basisFunction = [
     'title': '3D试衣'
   },
   {
-    'id': 'voice_interaction',
-    'img': voiceinteraction,
-    'title': '语音互动'
-  },
-  {
     'id': 'ecg_heart_rate',
     'img': ecgheartrate,
     'title': '心电心率'
   },
   {
-    'id': 'preferential',
-    'img': preferential,
-    'title': '优惠福利'
+    'id': 'voice_interaction',
+    'img': voiceinteraction,
+    'title': '语音互动'
+  },
+  {
+    'id': 'promotion',
+    'img': promotion,
+    'title': '推广平台'
   },
   {
     'id': 'product',
@@ -87,9 +87,14 @@ export const basisFunction = [
     'title': '商品平台'
   },
   {
-    'id': 'promotion',
-    'img': promotion,
-    'title': '推广平台'
+    'id': 'advertising',
+    'img': advertising,
+    'title': '广告平台'
+  },
+  {
+    'id': 'music',
+    'img': music,
+    'title': '音乐平台'
   },
   {
     'id': 'hit_golden_eggs',
@@ -102,9 +107,9 @@ export const basisFunction = [
     'title': '幸运大转盘'
   },
   {
-    'id': 'music',
-    'img': music,
-    'title': '音乐平台'
+    'id': 'preferential',
+    'img': preferential,
+    'title': '优惠福利'
   },
   {
     'id': 'care_project',
@@ -114,12 +119,7 @@ export const basisFunction = [
   {
     'id': 'live',
     'img': live,
-    'title': '直播平台'
-  },
-  {
-    'id': 'advertising',
-    'img': advertising,
-    'title': '广告平台'
+    'title': '直播'
   }
 ]
 
@@ -225,39 +225,39 @@ import lettersPatent9 from '../assets/img/8.jpg'
 
 export const patentCertificate = [
   {
-    'title': '专利证书',
+    'title': '奥V智能(iOS)',
     'url': lettersPatent1
   },
   {
-    'title': '专利证书',
+    'title': '奥V智能(安卓)',
     'url': lettersPatent2
   },
   {
-    'title': '专利证书',
+    'title': '智能室内导航机器人',
     'url': lettersPatent3
   },
   {
-    'title': '专利证书',
+    'title': '防摔倒机器人',
     'url': lettersPatent4
   },
   {
-    'title': '专利证书',
+    'title': '广告宣传机器人',
     'url': lettersPatent5
   },
   {
-    'title': '专利证书',
+    'title': '客户信息管理机器人',
     'url': lettersPatent6
   },
   {
-    'title': '专利证书',
+    'title': '检测心率心电机器人',
     'url': lettersPatent7
   },
   {
-    'title': '专利证书',
+    'title': '货物管理机器人',
     'url': lettersPatent8
   },
   {
-    'title': '专利证书',
+    'title': '避障机器人',
     'url': lettersPatent9
   }
 ]

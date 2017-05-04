@@ -161,18 +161,17 @@
     <transition name="fade" mode="out-in">
       <ul class="floorNav">
         <li v-on:click="jump('d_fitting');"></li>
-        <li v-on:click="jump('voice_interaction');"></li>
         <li v-on:click="jump('ecg_heart_rate');"></li>
-        <li v-on:click="jump('preferential');"></li>
-        <li v-on:click="jump('product');"></li>
+        <li v-on:click="jump('voice_interaction');"></li>
         <li v-on:click="jump('promotion');"></li>
+        <li v-on:click="jump('product');"></li>
+        <li v-on:click="jump('advertising');"></li>
+        <li v-on:click="jump('music');"></li>
         <li v-on:click="jump('hit_golden_eggs');"></li>
         <li v-on:click="jump('lucky_big_wheel');"></li>
-        <li v-on:click="jump('music');"></li>
+        <li v-on:click="jump('preferential');"></li>
         <li v-on:click="jump('care_project');"></li>
         <li v-on:click="jump('live');"></li>
-        <li v-on:click="jump('advertising');"></li>
-        <li v-on:click="jump('d_fitting');"></li>
       </ul>
     </transition>
   </div>
