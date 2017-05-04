@@ -3,3 +3,7 @@
 /dist/*
 *npm-debug.log
 *.zip
+/src/axios/http.js
+/src/axios/api.js
+/官网效果图
+/node_modules
