@@ -4,7 +4,7 @@
 
     <el-collapse v-model="activeName" accordion>
     <template v-for="(item,index) in employList">
-      <el-collapse-item :title="item.position" :name="index">
+      <el-collapse-item :title="item.position" :name="index >> 0">
         <el-row class="border_bottom" style="margin-top: 5px;">
           <el-col :span="2">部门:</el-col>
           <el-col :span="22">{{ item.department }}</el-col>
