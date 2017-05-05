@@ -12,6 +12,11 @@ const routes = [
       resolve)
   },
   {
+    path: '/newsDetails',
+    component: resolve => require(['../components/newsDetails.vue'],
+      resolve)
+  },
+  {
     path: '/serviceSupport', // 服务与支持
     component: resolve => require(['../components/ServiceSupport.vue'],
       resolve),

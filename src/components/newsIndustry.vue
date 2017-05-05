@@ -1,48 +1,31 @@
 <template>
   <div id="newsIndustry">
-    <el-row class="newsList">
-      <el-col :xs="24" :sm="24" :md="12" :lg="9" class="newsImg"></el-col>
-      <el-col :xs="24" :sm="24" :md="12" :lg="15" class="newsContent">
-        <h3>请注意.一大波导购机器人正在接近</h3>
-        <h4>2017-03-01</h4>
-        <p>服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。</p>
-        <div class="newsParticulars">
-          <a href="#">了解更多</a>
-        </div>
-      </el-col>
-    </el-row>
-    <el-row class="newsList">
-      <el-col :xs="24" :sm="24" :md="12" :lg="9" class="newsImg"></el-col>
-      <el-col :xs="24" :sm="24" :md="12" :lg="15" class="newsContent">
-        <h3>请注意.一大波导购机器人正在接近</h3>
-        <h4>2017-03-01</h4>
-        <p>服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。</p>
-        <div class="newsParticulars">
-          <a href="#">了解更多</a>
-        </div>
-      </el-col>
-    </el-row>
-    <el-row class="newsList">
-      <el-col :xs="24" :sm="24" :md="12" :lg="9" class="newsImg"></el-col>
-      <el-col :xs="24" :sm="24" :md="12" :lg="15" class="newsContent">
-        <h3>请注意.一大波导购机器人正在接近</h3>
-        <h4>2017-03-01</h4>
-        <p>服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。服务机器人行业前景乐观，未来万亿空间，但目前人工智能等技术尚待成熟，市场尚需培育过程，服务机器人仍在起步阶段。现阶段，突出功能和内容的服务机器人更能抓住市场。服务机器人产业的兴起基础和条件已经具备，对于目前处于初步阶段的众多企业来说，如何通过技术创新和商业模式创新来突出产品的功能和内容，点燃终端市场的刚需才是关键。哎哟不错智能机器人，将技术重点对准内衣市场，力求提升实体店购物体验，让更多的人体验到逛实体店的乐趣，也让实体行业转型到服务时代所需的模式，让优质的服务体验，成为顾客的动力，更成为市场繁荣的希望。</p>
-        <div class="newsParticulars">
-          <a href="#">了解更多</a>
-        </div>
-      </el-col>
-    </el-row>
+    <template v-for="item in newsList">
+      <el-row class="newsList">
+          <router-link :to="{path: '/newsDetails', query: {id: item.id, type: 2}}">
+            <el-col :xs="24" :sm="24" :md="12" :lg="9" class="newsImg" :style="'background: url(' + item.image + ') #2E3037 no-repeat center center'">
+              <!-- <img :src="item.image" :alt="item.title"> -->
+            </el-col>
+          </router-link>
+          <el-col :xs="24" :sm="24" :md="12" :lg="15" class="newsContent">
+            <router-link :to="{path: '/newsDetails', query: {id: item.id, type: 2}}"><h3>{{ item.title }}</h3></router-link>
+            <h4>{{ item.add_time }}</h4>
+            <p>{{ item.content }}</p>
+            <div class="newsParticulars">
+              <router-link :to="{path: '/newsDetails', query: {id: item.id, type: 2}}">了解更多</router-link>
+            </div>
+          </el-col>
+      </el-row>
+    </template>
 
     <el-row>
       <el-col :xs="24" :sm="20" :md="16" :lg="12">
-        <el-pagination 
-          @size-change="handleSizeChange"
+        <el-pagination
           @current-change="handleCurrentChange"
-          :current-page="currentPage3"
-          :page-size="200"
+          :current-page="currentPage"
+          :page-size="pageSize"
           layout="prev, pager, next, jumper"
-          :total="1000">
+          :total="pageSize*totalPages">
         </el-pagination>
       </el-col>
     </el-row>
@@ -50,20 +33,60 @@
 </template>
 
 <script>
+  import { listIndustryNews } from '../axios/api.js'
   import '../assets/less/newsIndustry.less'
   export default{
     name: 'newsIndustry',
+    data () {
+      return {
+        newsList: [], // 新闻列表 后台获取
+        // 当前页
+        currentPage: 1,
+        // 总页数
+        totalPages: 1,
+        // 每页条数
+        pageSize: 3
+      }
+    },
+    created: function () {
+      /* --- 初始获取 公司新闻 ---- */
+      this.getNewsList()
+      /* -------------------------- */
+    },
     methods: {
       handleSizeChange (val) {
         console.log(`每页 ${val} 条`)
       },
       handleCurrentChange (val) {
-        this.currentPage = val
-        console.log(`当前页: ${val}`)
+        this.getNewsList(val)
+      },
+      /* ----------------- 获取数据 ----------------- */
+      getNewsList (currentPage) {
+        const _this = this
+        this.$axios.post(listIndustryNews, {
+          'current_page': currentPage
+        })
+        .then((msg) => {
+          const data = msg.data
+          switch (data.flag >> 0) {
+            case 1000:
+              // 当前页
+              _this.currentPage = data.current_page >> 0
+              // 总页数
+              _this.totalPages = data.total_pages >> 0
+              // 数据列表 根据不同选择 解析不同数据
+              _this.newsList = data.industry_news_list
+              break
+            default:
+              console.log(`服务器错误: ${data.return_code}`)
+              break
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
       }
-    },
-    data () {
-      return {}
+      /* ------------------------------------------- */
     }
   }
 </script>

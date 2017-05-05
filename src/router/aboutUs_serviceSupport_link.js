@@ -3,14 +3,14 @@ export const aboutUs = [
     'path': '/aboutUs/companyProfile',
     'title': '公司简介'
   },
-  // {
-  //   'path': '/aboutUs/newsTrends',
-  //   'title': '公司动态'
-  // },
-  // {
-  //   'path': '/aboutUs/newsIndustry',
-  //   'title': '行业动态'
-  // },
+  {
+    'path': '/aboutUs/newsTrends',
+    'title': '公司动态'
+  },
+  {
+    'path': '/aboutUs/newsIndustry',
+    'title': '行业动态'
+  },
   {
     'path': '/aboutUs/joinUs',
     'title': '加入我们'
