@@ -3,25 +3,12 @@
     <div class="d_fitting wrap" id="d_fitting">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/3d_fitting_picture-min.png" alt="3D试衣_详情">
+          <!-- <img src="../assets/img/3d_fitting_picture-min.png" alt="3D试衣_详情"> -->
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">3D试衣</h3>
-            <p>全球首款智能AR内衣试衣平台，利用团队专有仿生物技术，快速塑造专属个性3D模特，试穿效果接近真人试穿，试穿变得自由随性。更能一键预约上门服务和商品同城配送。</p>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
-    <div class="voice_interaction wrap" id="voice_interaction">
-      <el-row class="text_wrap">
-        <el-col :span="14" class="center">
-          <img src="../assets/img/voice_interaction_picture-min.png" alt="语音互动_详情">
-        </el-col>
-        <el-col :offset="2" :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">语音互动</h3>
-            <p>留住顾客是达成销售不可或缺的环节。机器人掌握庞大的信息库，包括内衣知识和应答机制，能够和顾客聊天、讲故事、讲笑话、唱歌、导购等一系列互动，增加顾客留店的时间，加深门店和产品的认识，促进销售。</p>
+            <p>全球首款3D内衣试衣综合平台，通过自定义人物形象，选择场景、内衣，利用3D科技真实模拟试穿效果，与哎哟不错机器人同步使用，实现门店、大数据、云技术的高度融合，增加消费者购物的成交率和满意度。</br>预约下单功能，打破实体门店的时间、空间限制，实现实体门店24小时不打烊。</p>
           </div>
         </el-col>
       </el-row>
@@ -31,36 +18,23 @@
         <el-col :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">心电心率</h3>
-            <p>能够检查出人体的心理压力、身体压力、综合压力、抗压压力、心脏功能年龄、交感-副交感神经等六项身体重要HRV指数，分析出心电是否异常。让消费者购物的同时还能了解自己的身体健康状况，更能让门店赋予一种品牌文化和附加值的认同。</p>
+            <p>优异的微感应处理能力，放大和提取人体电生理信号，转化成通俗易懂的分析导图，直观呈现身体状况。能够准确测出人体6项心脏健康指标和6项压力指标，功能十分强大。</p>
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/ecg_heart_rate_picture-min.png" alt="心电心率_详情">
+          <!-- <img src="../assets/img/ecg_heart_rate_picture-min.png" alt="心电心率_详情"> -->
         </el-col>
       </el-row>
     </div>
-    <div class="preferential wrap" id="preferential">
-      <el-row class="text_wrap">
-        <el-col :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">优惠福利</h3>
-            <p>各种促销优惠券以及免费福利礼品的集聚地，让周边的商家都加入到我们联盟，打造一连串异业联盟互利的广告连锁，让门店更广为人知的同时，更能多一份销售渠道和收益。</p>
-          </div>
-        </el-col>
-        <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/preferential_picture-min.png" alt="砸金蛋_详情">
-        </el-col>
-      </el-row>
-    </div>
-    <div class="product wrap" id="product">
+    <div class="voice_interaction wrap" id="voice_interaction">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/product_picture-min.png" alt="3D试衣_详情">
+          <!-- <img src="../assets/img/voice_interaction_picture-min.png" alt="语音互动_详情"> -->
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
-            <h3 class="basisFunctionDetails_title">商品平台</h3>
-            <p>用互联网的理念进行实体销售，脱离繁琐的选衣过程，顾客可以舒服地进行一键查找搜索想要的商品，简单轻松的购物体验让顾客在享受中购物。传统人脑记忆只能大致记住产品特性，很多时候会出现遗忘、偏差、延误顾客对产品的深入了解，商品平台可以记住所有的产品的款式以及商品详细，即搜即显示，填补了门店这一方面的不足，全方位高效地为门店销售商品。</p>
+            <h3 class="basisFunctionDetails_title">语音互动</h3>
+            <p>庞大的语音信息库，除商品知识智能应答外，聊天、讲笑话、讲故事、唱歌、导购等系列互动，可帮门店实现留客，同时提升顾客消费体验，加深顾客对门店印象，促进销售。</p>
           </div>
         </el-col>
       </el-row>
@@ -70,11 +44,50 @@
         <el-col :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">推广平台</h3>
-            <p>目前很多传统线下门店使用真人吆喝推广活动，这一固定重复的行为既增加导购员的辛劳、也增加了门店销售人手短缺和人工成本。而哎哟不错机器人只需要输入吆喝的内容，就能代替店员完成吆喝引导环节，省时省力，让导购员时刻专注于销售环节。</p>
+            <p>只需简单操作，将促销活动、新品推介等内容输入，吆喝引导、新品推广宣传交给哎哟不错机器人，让导购员有更多的时间专注销售环节。</p>
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/promotion_picture-min.png" alt="砸金蛋_详情">
+          <!-- <img src="../assets/img/promotion_picture-min.png" alt="砸金蛋_详情"> -->
+        </el-col>
+      </el-row>
+    </div>
+    <div class="product wrap" id="product">
+      <el-row class="text_wrap">
+        <el-col :span="14" class="center">
+          <!-- <img src="../assets/img/product_picture-min.png" alt="3D试衣_详情"> -->
+        </el-col>
+        <el-col :offset="2" :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">商品平台</h3>
+            <p>用互联网的思维，进行实体销售，语音搜索、商品一键搜索，让顾客购物体验更轻松简单。海量商品记忆库，精准介绍商品，避免被动式库存的产生。IPS液晶显示屏，178度超广角可视角度，高对比技术给商品一个栩栩如生的舞台。</p>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+    <div class="advertising wrap" id="advertising">
+      <el-row class="text_wrap">
+        <el-col :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">广告平台</h3>
+            <p>人人都是自媒体，哎哟不错机器人集7.0大尺寸触摸屏和音响设备于一身，商品推广、视频广告宣传、会员优惠资讯、店面最新活动都能通过哎哟不错机器人进行宣传，广告更轻松，更灵活，更吸引。</p>
+          </div>
+        </el-col>
+        <el-col :offset="2" :span="14" class="center">
+          <!-- <img src="../assets/img/advertising_picture-min.png" alt="广告平台"> -->
+        </el-col>
+      </el-row>
+    </div>
+    <div class="music wrap" id="music">
+      <el-row class="text_wrap">
+        <el-col :span="14" class="center">
+          <!-- <img src="../assets/img/music_picture-min.png" alt="音乐平台"> -->
+        </el-col>
+        <el-col :offset="2" :span="8" class="center">
+          <div>
+            <h3 class="basisFunctionDetails_title">音乐平台</h3>
+            <p>在愉悦的音乐中进行购物，是一种享受。哎哟不错机器人音乐平台中，海量音乐库，可根据顾客喜好，随时切换音乐，提升购物体验。</p>
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -83,49 +96,49 @@
         <el-col :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">砸金蛋</h3>
-            <p>如今砸金蛋无人不知无人不晓，有了机器人，每位一商家也能拥有一套自己的砸金蛋活动。借着机器人的电子砸金蛋模式，能够增强实体门店活动的互动性、娱乐性以及神秘感。商家可以更加丰富地使用砸金蛋，让顾客体验不曾有的乐趣，收获命运中的惊喜。</p>
+            <p>操作简单，自定义游戏规则，激起顾客好奇心；增强实体门店与顾客间的互动性、娱乐性以及神秘感；活动独特给力，后续影响较大，提高销量，带来回头率。</p>
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/hit_golden_eggs_picture-min.png" alt="砸金蛋_详情">
+          <!-- <img src="../assets/img/hit_golden_eggs_picture-min.png" alt="砸金蛋_详情"> -->
         </el-col>
       </el-row>
     </div>
     <div class="lucky_big_wheel wrap" id="lucky_big_wheel">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/lucky_big_wheel_picture-min.png" alt="3D试衣_详情">
+          <!-- <img src="../assets/img/lucky_big_wheel_picture-min.png" alt="3D试衣_详情"> -->
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">幸运大转盘</h3>
-            <p>抽奖，作为一种销售模式，在各行各业随处可见。然而要做到花样更多，可塑性更强，趣味性更高，中奖率更自由，显然也要花一定的心思。机器人幸运大转盘，实行线下门店电子抽奖的形式，能够智能出奖，快速领奖。更灵活的奖品设置和中奖设置让活动更加得心应手。</p>
+            <p>创建过程简便、易操作；自定义抽奖规则，中奖概率轻松制定，可控性高；线上活动，线下核销，增强粉丝粘性。</p>
           </div>
         </el-col>
       </el-row>
     </div>
-    <div class="music wrap" id="music">
+    <div class="preferential wrap" id="preferential">
       <el-row class="text_wrap">
-        <el-col :span="14" class="center">
-          <img src="../assets/img/music_picture-min.png" alt="音乐平台">
-        </el-col>
-        <el-col :offset="2" :span="8" class="center">
+        <el-col :span="8" class="center">
           <div>
-            <h3 class="basisFunctionDetails_title">音乐平台</h3>
-            <p>购物的时候音乐搭配已经是购物的主流，在舒缓或者愉悦的音乐状态下购物能提升顾客购买欲，哎哟不错妹妹提供了大量的流行音乐，你可以根据顾客的一个品味随时切换音乐。</p>
+            <h3 class="basisFunctionDetails_title">优惠福利</h3>
+            <p>异业商家优惠券、福利礼品的集聚地，打造异业联盟互利的广告连锁，增加广告宣传渠道，达到合作共赢。</p>
           </div>
+        </el-col>
+        <el-col :offset="2" :span="14" class="center">
+          <!-- <img src="../assets/img/preferential_picture-min.png" alt="砸金蛋_详情"> -->
         </el-col>
       </el-row>
     </div>
     <div class="care_project wrap" id="care_project">
       <el-row class="text_wrap">
         <el-col :span="14" class="center">
-          <img src="../assets/img/care_project_picture-min.png" alt="关爱工程">
+          <!-- <img src="../assets/img/care_project_picture-min.png" alt="关爱工程"> -->
         </el-col>
         <el-col :offset="2" :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">关爱工程</h3>
-            <p>我们的成功得益于社会的支持，因此我们常要有感恩的心，以回馈社会这个方式作出贡献。关爱工程主要是想要让我们在买卖过程中能同时支持慈善事业，一份心意，十分关爱。</p>
+            <p>我们的成功得益于社会的支持，因此我们常怀有感恩的心回馈社会。慈善事业的路上，有您一份爱的力量！关爱工程，一份心意，十分关爱。</p>
           </div>
         </el-col>
       </el-row>
@@ -135,24 +148,11 @@
         <el-col :span="8" class="center">
           <div>
             <h3 class="basisFunctionDetails_title">直播</h3>
-            <p>通过直播可以普及内衣的专业知识，与店内会员互动沟通，让顾客产生有效的粘度，激活新老会员的互动。在如今全民直播的大浪潮下，跟不上时代走向的门店，就会面临被遗忘，被淘汰的局面。</p>
+            <p>受众广泛、互动性强，传播影响力大，通过直播普及商品专业知识，与顾客互动增强粘性，提高门店知名度和影响力。</p>
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/live_picture-min.png" alt="直播">
-        </el-col>
-      </el-row>
-    </div>
-    <div class="advertising wrap" id="advertising">
-      <el-row class="text_wrap">
-        <el-col :span="8" class="center">
-          <div>
-            <h3 class="basisFunctionDetails_title">广告平台</h3>
-            <p>当我们机器人推广到所有奥丝蓝黛时，我们最大的战略目标是分众传媒的第二，机器人传媒。视频广告是一个常态式的盈利点，当使用机器人的群体大增，这个目标基本就可以达到了。</p>
-          </div>
-        </el-col>
-        <el-col :offset="2" :span="14" class="center">
-          <img src="../assets/img/advertising_picture-min.png" alt="广告平台">
+          <!-- <img src="../assets/img/live_picture-min.png" alt="直播"> -->
         </el-col>
       </el-row>
     </div>

@@ -2,27 +2,27 @@
   <div id="joinUs">
     <h3>我们不看面试技巧，我们看实力；我们不看外表身材，我们看人心。</br>你来，团队就在这欢迎你！</h3>
 
-    <el-collapse v-model="activeName" accordion>
-    <template v-for="(item,index) in employList">
-      <el-collapse-item :title="item.position" :name="index >> 0">
-        <el-row class="border_bottom" style="margin-top: 5px;">
-          <el-col :span="2">部门:</el-col>
-          <el-col :span="22">{{ item.department }}</el-col>
-        </el-row>
-        <el-row class="border_bottom">
-          <el-col :span="2">招聘人数:</el-col>
-          <el-col :span="22">{{ item.employ_count }}</el-col>
-        </el-row>
-        <el-row class="border_bottom">
-          <el-col :span="2">岗位职责:</el-col>
-          <el-col :span="22">{{ item.duty }}</el-col>
-        </el-row>
-        <el-row class="border_bottom">
-          <el-col :span="2">任职需求:</el-col>
-          <el-col :span="22">{{ item.demand }}</el-col>
-        </el-row>
-      </el-collapse-item>
-    </template>
+    <el-collapse v-model="activeName">
+      <template v-for="(item,index) in employList">
+        <el-collapse-item :title="item.position" :name="index">
+          <el-row class="border_bottom" style="margin-top: 5px;">
+            <el-col :xs="6" :sm="6" :md="4" :lg="2">部门:</el-col>
+            <el-col :xs="18" :sm="18" :md="20" :lg="22">{{ item.department }}</el-col>
+          </el-row>
+          <el-row class="border_bottom">
+            <el-col :xs="6" :sm="6" :md="4" :lg="2">招聘人数:</el-col>
+            <el-col :xs="18" :sm="18" :md="20" :lg="22">{{ item.employ_count }}</el-col>
+          </el-row>
+          <el-row class="border_bottom">
+            <el-col :xs="6" :sm="6" :md="4" :lg="2">岗位职责:</el-col>
+            <el-col :xs="18" :sm="18" :md="20" :lg="22" v-html="item.duty"></el-col>
+          </el-row>
+          <el-row class="border_bottom">
+            <el-col :xs="6" :sm="6" :md="4" :lg="2">任职需求:</el-col>
+            <el-col :xs="18" :sm="18" :md="20" :lg="22" v-html="item.demand"></el-col>
+          </el-row>
+        </el-collapse-item>
+      </template>
     </el-collapse>
   </div>
 </template>
@@ -43,6 +43,7 @@
     data () {
       return {
         joinUs,
+        activeNames: ['1'],
         employList: []
       }
     },
