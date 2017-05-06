@@ -54,7 +54,7 @@
                   <img 
                     src="../assets/img/2_2.png"
                     style="margin: auto" 
-                    v-bind:style="{ width: 1273 * scale + 'px', top: 230 * scale + 'px', left: 0, right: 0 }">
+                    v-bind:style="{ width: 1200 * scale + 'px', top: 230 * scale + 'px', left: 0, right: 0 }">
                   <img 
                     src="../assets/img/2_3.png"
                     style="margin: auto" 
