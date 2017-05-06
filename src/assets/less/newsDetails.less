@@ -38,16 +38,16 @@
           }
         }
       }
+      .clickA{
+        color: #999;
+        cursor: pointer;
+      }
+      .clickA:hover{
+        color: #fff;
+      }
       .newsNav{
         font-size: 14px;
         margin: 40px 0 10px 0;
-        .clickA{
-          color: #999;
-          cursor: pointer;
-        }
-        .clickA:hover{
-          color: #fff;
-        }
         span{
           color: #ccc;
         }
@@ -59,6 +59,13 @@
         }
       }
     }
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-active {
+    opacity: 0
   }
 
   @media (max-width: 1200px){
