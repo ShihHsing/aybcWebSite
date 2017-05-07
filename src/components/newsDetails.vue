@@ -5,7 +5,7 @@
         <el-row class="newsDetailsBody">
           <el-col :xs="22" :sm="22" :md="18" :lg="18" style="box-sizing: border-box;padding: 0 10px;">
             <!-- <h1 style="text-align: center;margin-bottom: 30px;color: #ccc;">{{ title }}</h1> -->
-            <transition name="fade" mode="out-in">
+            <transition name="fade" mode="out-in" appear>
               <newsDetailsHtml :details="details"></newsDetailsHtml>
             </transition>
           </el-col>

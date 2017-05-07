@@ -6,7 +6,7 @@ import './ui/ui'
 import './map/map'
 import Qs from 'qs'
 import axios from './axios/http.js'
-
+import './public/animate.min.css'
 Vue.use(Resource)
 
 // 将axios挂载到prototype上，在组件中可以直接使用this.axios访问
