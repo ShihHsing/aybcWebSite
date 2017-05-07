@@ -4,7 +4,7 @@
 		<div class="banner">
       <template>
         <div class="block">
-          <el-carousel height="100%;" :autoplay="false" arrow="never" @change="changeCarousel" ref="carousel">
+          <el-carousel height="100%;" :autoplay="false" arrow="never" @change="changeCarousel" ref="carousel" trigger="click">
 
             <!-- 第一页 -->
             <el-carousel-item>
