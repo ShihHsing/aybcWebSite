@@ -75,7 +75,7 @@
           switch (data.flag >> 0) {
             case 1000:
               _this.title = data.news_detail.title
-              _this.details = data.news_detail.details
+              _this.details = data.news_detail
               _this.next = data.next
               _this.previous = data.previous
               document.documentElement.scrollTop = document.body.scrollTop = 0
