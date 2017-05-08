@@ -285,7 +285,7 @@
                           this.one.img8 = true
                           setTimeout(() => {
                             this.$refs.carousel.next()
-                          }, 2300)
+                          }, 4000)
                         }, 300)
                       }, 600)
                     }, 300)
@@ -305,7 +305,7 @@
               this.two.img1 = true
               setTimeout(() => {
                 this.$refs.carousel.next()
-              }, 2800)
+              }, 4000)
             }, 800)
           }, 600)
         }, 600)
@@ -325,7 +325,7 @@
                     this.three.img1 = true
                     setTimeout(() => {
                       this.$refs.carousel.next()
-                    }, 3000)
+                    }, 4000)
                   }, 1000)
                 }, 300)
               }, 300)
@@ -340,7 +340,7 @@
             this.four.img2 = true
             setTimeout(() => {
               this.$refs.carousel.next()
-            }, 2600)
+            }, 4000)
           }, 600)
         }, 600)
       },
