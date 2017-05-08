@@ -34,7 +34,7 @@
                   <h3>参数</h3>
                 </router-link>
               </el-dropdown-item>
-             <!--  <el-dropdown-item>
+              <!--  <el-dropdown-item>
                 <router-link to="/aybcRobot/publicityVideo">
                   <h3>产品宣传视频</h3>
                 </router-link>
@@ -71,26 +71,76 @@
       </el-col>
       <el-col :xs="6" :sm="4" :md="3" :lg="2">
         <el-row type="flex" justify="center">
-          <el-dropdown menu-align="start" trigger="click">
+          <el-dropdown menu-align="start" trigger="click" v-if="qrcodeList">
             <span class="el-dropdown-link">
               <h2>&nbsp;&nbsp;&nbsp;APP下载</h2>
             </span>
-            <!-- <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>心电设备</el-dropdown-item>
-            </el-dropdown-menu> -->
+            <el-dropdown-menu slot="dropdown">
+              <template v-for="item in qrcodeList">
+                <el-dropdown-item>
+                  <h3 @click="appQrcode(item.id)">{{ item.name }}</h3>
+                </el-dropdown-item>
+              </template>
+            </el-dropdown-menu>
           </el-dropdown>
         </el-row>
       </el-col>
     </el-row>
+    <el-dialog :title="dialogTitle" v-model="qrcode" size="tiny">
+      <img style="width: 100%;" :src="dialogImg" :alt="dialogTitle" v-if="dialogImg">
+    </el-dialog>
   </div>
 </template>
 
 <script>
   import '.././assets/less/top-navigation.less'
+  import { listQrcode } from '../axios/api.js'
   export default{
     name: 'top-navigation',
     data () {
-      return {}
+      return {
+        qrcode: false,
+        qrcodeList: [], // App列表,
+        dialogTitle: '',
+        dialogImg: ''
+      }
+    },
+    created: function () {
+      /* ===== 获取招聘列表 ===== */
+      this.getListQrcode()
+      /* ======================== */
+    },
+    methods: {
+      appQrcode (id) {
+        for (let i = this.qrcodeList.length - 1; i >= 0; i--) {
+          if (this.qrcodeList[i].id >> 0 === id >> 0) {
+            this.dialogTitle = this.qrcodeList[i].name
+            this.dialogImg = this.qrcodeList[i].url
+            this.qrcode = true
+          }
+        }
+      },
+      // 获取招聘
+      getListQrcode () {
+        this.$axios.post(listQrcode)
+        .then((msg) => {
+          const data = msg.data
+          switch (data.flag) {
+            case 1000:
+              this.qrcodeList = data.qrcode_list
+              break
+            case 9001:
+              /* 不做处理 */
+              break
+            default:
+              console.log(data.return_code)
+              break
+          }
+        })
+        .catch(error => {
+          console.log(error)
+        })
+      }
     }
   }
 </script>
