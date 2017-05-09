@@ -56,7 +56,7 @@ import preferential from '../assets/img/preferential.png'
 import product from '../assets/img/product.png'
 import promotion from '../assets/img/promotion.png'
 import music from '../assets/img/music.png'
-import advertising from '../assets/img/advertising.png'
+import advertising from '../assets/img/noAd.png'
 import careProject from '../assets/img/care_project.png'
 import live from '../assets/img/live.png'
 
@@ -89,7 +89,8 @@ export const basisFunction = [
   {
     'id': 'advertising',
     'img': advertising,
-    'title': '广告平台'
+    // 'img': promotion,
+    'title': '平台'
   },
   {
     'id': 'music',

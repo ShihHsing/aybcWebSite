@@ -74,7 +74,7 @@
           </div>
         </el-col>
         <el-col :offset="2" :span="14" class="center">
-          <!-- <img src="../assets/img/advertising_picture-min.png" alt="广告平台"> -->
+          <!-- <img src="../assets/img/noAd_picture-min.png" alt="广告平台"> -->
         </el-col>
       </el-row>
     </div>
