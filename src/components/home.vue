@@ -99,7 +99,7 @@
                     <img
                       v-if="two.img1"
                       src="../assets/img/2_1.png"
-                      style="margin: auto" 
+                      style="margin: auto"
                       v-bind:style="{ width: 1067 * scale + 'px', top: 135 * scale + 'px', left: 0, right: 0 }">
                   </transition>
                   <transition
@@ -108,7 +108,7 @@
                     <img
                       v-if="two.img2"
                       src="../assets/img/2_2.png"
-                      style="margin: auto" 
+                      style="margin: auto"
                       v-bind:style="{ width: 1200 * scale + 'px', top: 230 * scale + 'px', left: 0, right: 0 }">
                   </transition>
                   <transition
@@ -117,7 +117,7 @@
                     <img
                       v-if="two.img3"
                       src="../assets/img/2_3.png"
-                      style="margin: auto" 
+                      style="margin: auto"
                       v-bind:style="{ width: 976 * scale + 'px', top: 400 * scale + 'px', left: 0, right: 0 }">
                   </transition>
                 </div>
@@ -141,7 +141,7 @@
                   <transition
                     name="animated"
                     enter-active-class="animated fadeIn">
-                    <img 
+                    <img
                       v-if="three.img2"
                       src="../assets/img/3_3.png"
                       style="margin: auto"
@@ -150,7 +150,7 @@
                   <transition
                     name="animated"
                     enter-active-class="animated bounceInLeft">
-                    <img 
+                    <img
                       v-if="three.img3"
                       src="../assets/img/3_4.png"
                       v-bind:style="{ width: 455 * scale + 'px', top: 650 * scale + 'px', left: 310 * scale + 'px' }">
@@ -166,7 +166,7 @@
                   <transition
                     name="animated"
                     enter-active-class="animated bounceInRight">
-                    <img 
+                    <img
                       v-if="three.img4"
                       src="../assets/img/3_1.png"
                       v-bind:style="{ width: 408 * scale + 'px', top: 280 * scale + 'px', right: 420 * scale + 'px' }">
@@ -174,7 +174,7 @@
                   <transition
                     name="animated"
                     enter-active-class="animated bounceInRight">
-                    <img 
+                    <img
                       v-if="three.img5"
                       src="../assets/img/3_2.png"
                       v-bind:style="{ width: 434 * scale + 'px', top: 650 * scale + 'px', right: 330 * scale + 'px' }">
@@ -200,7 +200,7 @@
                   <transition
                     name="animated"
                     enter-active-class="animated rotateIn bounceIn">
-                    <img 
+                    <img
                       v-if="four.img2"
                       src="../assets/img/4_1.png"
                       style="margin: auto"
