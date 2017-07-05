@@ -87,27 +87,44 @@
       </el-col>
     </el-row>
     <el-dialog :title="dialogTitle" v-model="qrcode" size="tiny">
-      <img style="width: 100%;" :src="dialogImg" :alt="dialogTitle" v-if="dialogImg">
+      <img :src="dialogImg" height="700" width="1000" :alt="dialogTitle" v-if="dialogImg">
     </el-dialog>
   </div>
 </template>
 
+<style lang="less">
+  .el-dialog{
+    width: auto!important;
+    .el-dialog__header{
+      display: none;
+    }
+    .el-dialog__body{
+      padding: 0;
+    }
+  }
+</style>
+
 <script>
   import '.././assets/less/top-navigation.less'
+  import DGApp from '../assets/img/3DGApp-min.png'
+  import CKApp from '../assets/img/CKApp-min.png'
   import { listQrcode } from '../axios/api.js'
   export default{
     name: 'top-navigation',
     data () {
       return {
         qrcode: false,
-        qrcodeList: [], // App列表,
+        qrcodeList: [
+          { id: 1, name: '3D购', url: DGApp },
+          { id: 2, name: '储客', url: CKApp }
+        ], // App列表,
         dialogTitle: '',
         dialogImg: ''
       }
     },
     created: function () {
       /* ===== 获取招聘列表 ===== */
-      this.getListQrcode()
+      // this.getListQrcode()
       /* ======================== */
     },
     methods: {
