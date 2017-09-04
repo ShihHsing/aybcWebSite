@@ -1,6 +1,6 @@
 {
   "name": "new-aybc-web-site",
-  "description": "A Vue.js project",
+  "description": "哎哟不错官网",
   "version": "1.0.0",
   "author": "AbandonedDrama",
   "private": true,
@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "axios": "^0.16.0",
+    "vue-slide": "^1.1.1",
     "qs": "^6.4.0",
     "element-ui": "^1.2.3",
     "vue-router": "^2.3.0",
